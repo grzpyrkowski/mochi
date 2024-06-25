@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'chillaxbold';
+  src: url('fonts/chillax/chillax-bold-webfont.woff2') format('woff2'),
+  url('fonts/chillax/chillax-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chillaxextralight';
+  src: url('fonts/chillax/chillax-extralight-webfont.woff2') format('woff2'),
+  url('fonts/chillax/chillax-extralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chillaxlight';
+  src: url('fonts/chillax/chillax-light-webfont.woff2') format('woff2'),
+  url('fonts/chillax/chillax-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'chillaxregular';
+  src: url('fonts/chillax/chillax-regular-webfont.woff2') format('woff2'),
+  url('fonts/chillax/chillax-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+  @apply bg-mochi-gray;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header {
+  @apply bg-mochi-gray
+  text-mochi-orange text-4xl
+  px-10 py-5
+  flex
+  place-content-between;
+}
+
+.s {
+  font-family: chillaxregular;
+}
+
+.fan-photo {
+  @apply border-mochi-orange
+  border-8;
+}
