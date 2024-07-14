@@ -1,4 +1,3 @@
-import piekny from "../data/pictures/piekny.jpg";
 
 export default function LandingPage() {
     return (
@@ -7,11 +6,7 @@ export default function LandingPage() {
                 <h1 className="s">mo.chi</h1>
             </section>
             <section className="bg-mochi-gray">
-                <div className="fan mx-8 my-5 flex">
-                    <img className="fan-photo" src={piekny} alt="piekny"/>
-                    <img className="fan-photo" src={piekny} alt="piekny"/>
-                    <img className="fan-photo" src={piekny} alt="piekny"/>
-                </div>
+s
             </section>
         </>
     )

@@ -13,7 +13,8 @@ export default {
     },
     colors: {
       'mochi-orange': '#D44E31',
-      'mochi-gray': '#F4F0E6'
+      'mochi-yellow': '#F4F0E6',
+      'mochi-white': '#EFEFEF'
     },
     extend: {
       fontFamily: {

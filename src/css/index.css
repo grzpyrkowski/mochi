@@ -34,22 +34,41 @@
   font-style: normal;
 }
 
-
 body {
-  @apply bg-mochi-gray;
-  place-items: center;
+  @apply bg-mochi-white
+  flex
+  justify-center
+  text-center
+  mx-0
+  my-auto;
   min-width: 320px;
   min-height: 100vh;
-  margin: 0 auto;
-  text-align: center;
+}
+
+#app-wrapper {
+  max-width: 1440px;
+  width: calc(100vw);
 }
 
 header {
-  @apply bg-mochi-gray
-  text-mochi-orange text-4xl
+  @apply bg-mochi-white
+  text-mochi-orange text-xl
   px-10 py-5
   flex
-  place-content-between;
+  place-content-evenly;
+}
+
+.nav-logo {
+  width: 10%;
+}
+
+.nav-icons {
+  width: 10%;
+}
+
+.nav-icons img {
+  @apply mx-2
+  w-1/5;
 }
 
 .s {
@@ -59,4 +78,35 @@ header {
 .fan-photo {
   @apply border-mochi-orange
   border-8;
+  height: calc(200vh);
+  position: absolute;
+}
+
+.fan-center {
+}
+
+.fan-left, .fan-right {
+  width: calc(30vw);
+  margin-top: 6rem;
+  object-fit: contain;
+}
+
+.fan-left {
+  transform: rotateZ(-10deg);
+  animation: fan-left-rotating linear;
+  animation-timeline: scroll();
+}
+
+@keyframes fan-left-rotating {
+  to { transform: rotateZ(-22deg) }
+}
+
+.fan-right {
+  transform: rotateZ(15deg);
+  animation: fan-right-rotating linear;
+  animation-timeline: scroll();
+}
+
+@keyframes fan-right-rotating {
+  to { transform: rotateZ(22deg) }
 }
