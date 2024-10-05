@@ -18,8 +18,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        "gloock": ['"Gloock", serif'],
-        "chillax": ['"chillaxregular", serif]']
+        "roboto": ['"Roboto", sans-serif'],
+        "chillax-regular": ['"Chillax-Regular", serif]']
       }
     },
   },
