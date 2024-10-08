@@ -41,7 +41,8 @@ body {
   justify-center
   text-center
   mx-0
-  my-auto;
+  my-auto
+  roboto-regular;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -73,7 +74,19 @@ header {
 }
 
 /* main */
-section * {
+main img {
+  border-radius: 1em;
+}
+
+.center {
   display: flex;
   place-content: center;
+}
+
+.wiz-photo {
+  @apply m-1;
+}
+
+.bg-image {
+  background-image: url('../data/pictures/landing_page/wspolne_1.png');
 }
