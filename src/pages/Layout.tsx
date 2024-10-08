@@ -1,9 +1,9 @@
 import HeaderButton from "../components/HeaderButton.tsx";
 import {Outlet} from "react-router-dom";
-import sign from "../data/pictures/sign.svg"
-import fb from "../data/pictures/facebook.svg"
-import ig from "../data/pictures/instagram.svg"
-import be from "../data/pictures/behance.svg"
+import sign from "../data/pictures/layout/sign.svg"
+import fb from "../data/pictures/layout/facebook.svg"
+import ig from "../data/pictures/layout/instagram.svg"
+import be from "../data/pictures/layout/behance.svg"
 
 export default function Layout() {
     return(

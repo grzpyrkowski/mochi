@@ -1,3 +1,4 @@
+@import url('../css/fonts/roboto.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -40,7 +41,8 @@ body {
   justify-center
   text-center
   mx-0
-  my-auto;
+  my-auto
+  roboto-regular;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -71,42 +73,20 @@ header {
   w-1/5;
 }
 
-.s {
-  font-family: chillaxregular;
+/* main */
+main img {
+  border-radius: 1em;
 }
 
-.fan-photo {
-  @apply border-mochi-orange
-  border-8;
-  height: calc(200vh);
-  position: absolute;
+.center {
+  display: flex;
+  place-content: center;
 }
 
-.fan-center {
+.wiz-photo {
+  @apply m-1;
 }
 
-.fan-left, .fan-right {
-  width: calc(30vw);
-  margin-top: 6rem;
-  object-fit: contain;
-}
-
-.fan-left {
-  transform: rotateZ(-10deg);
-  animation: fan-left-rotating linear;
-  animation-timeline: scroll();
-}
-
-@keyframes fan-left-rotating {
-  to { transform: rotateZ(-22deg) }
-}
-
-.fan-right {
-  transform: rotateZ(15deg);
-  animation: fan-right-rotating linear;
-  animation-timeline: scroll();
-}
-
-@keyframes fan-right-rotating {
-  to { transform: rotateZ(22deg) }
+.bg-image {
+  background-image: url('../data/pictures/landing_page/wspolne_1.png');
 }
