@@ -1,9 +1,11 @@
 import HeaderButton from "../components/HeaderButton.tsx";
 import {Outlet} from "react-router-dom";
-import sign from "../data/pictures/layout/sign.svg"
-import fb from "../data/pictures/layout/facebook.svg"
-import ig from "../data/pictures/layout/instagram.svg"
-import be from "../data/pictures/layout/behance.svg"
+import sign from "../data/pictures/layout/sign.svg";
+import fb from "../data/pictures/layout/facebook.svg";
+import ig from "../data/pictures/layout/instagram.svg";
+import be from "../data/pictures/layout/behance.svg";
+
+import logo from "../data/pictures/landing_page/logo.svg";
 
 export default function Layout() {
     return(
@@ -36,6 +38,24 @@ export default function Layout() {
                 <Outlet />
             </main>
             <footer>
+                <img className="mx-auto mt-20 w-1/5" src={logo}></img>
+                <div className="flex place-content-between w-3/5 mx-auto my-10">
+                    <button>strona główna</button>
+                    <button>o nas</button>
+                    <button>projekty</button>
+                    <button>oferta</button>
+                    <button>kontakt</button>
+                    <button>polityka prywatności</button>
+                </div>
+                <div className="flex place-content-between w-2/5 mx-auto my-10">
+                    <button>formularz kontaktowy</button>
+                    <button>email@gmail.com</button>
+                    <div>
+                        <button className="mx-1"><img src={fb}></img></button>
+                        <button className="mx-1"><img src={ig}></img></button>
+                        <button className="mx-1"><img src={be}></img></button>
+                    </div>
+                </div>
             </footer>
         </>
     )
