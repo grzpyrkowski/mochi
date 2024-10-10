@@ -37,6 +37,7 @@
 
 body {
   @apply bg-mochi-white
+  text-mochi-orange
   flex
   justify-center
   text-center
@@ -73,6 +74,16 @@ header {
   w-1/5;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+footer button {
+  text-transform: uppercase;
+}
+
 /* main */
 main img {
   border-radius: 1em;
@@ -81,12 +92,14 @@ main img {
 .center {
   display: flex;
   place-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wiz-photo {
   @apply m-1;
 }
 
-.bg-image {
-  background-image: url('../data/pictures/landing_page/wspolne_1.png');
+.section-realisations img {
+  @apply mx-auto;
 }

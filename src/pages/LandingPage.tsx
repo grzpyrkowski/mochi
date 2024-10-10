@@ -2,7 +2,11 @@ import HorizontalPhotoPanel from "../components/VerticalWizPanel"
 import logo from "../data/pictures/landing_page/logo.svg"
 import wiz1 from "../data/pictures/landing_page/wiz_1.png"
 import wspolne1 from "../data/pictures/landing_page/wspolne_1.png"
+import real1 from "../data/pictures/landing_page/realisation_1.png"
+import real2 from "../data/pictures/landing_page/realisation_2.png"
+import real3 from "../data/pictures/landing_page/realisation_3.png"
 import sign from "../data/pictures/layout/sign.svg"
+import bulb from "../data/pictures/landing_page/lightbulb.svg"
 
 export default function LandingPage() {
     return (
@@ -46,16 +50,38 @@ export default function LandingPage() {
             <section className="section-meetus">
                 <div className="relative">
                     <img className="block" alt="" src={wspolne1}></img>
-                    <div className="absolute z-10 text-left w-1/2 bottom-10 left-10 text-mochi-white">
-                    <div className="flex"><h1 className="text-5xl mb-5">POZNAJ MO.CHI DESIGN</h1><img className="rounded-none w-5 ml-8 mb-5" src={sign}></img></div>
+                    <div className="absolute z-10 text-left w-2/3 bottom-20 left-40 text-mochi-white">
+                    <div className="flex"><h1 className="mb-5">POZNAJ MO.CHI DESIGN</h1><img className="rounded-none w-5 ml-8 mb-5" src={sign}></img></div>
                         <p>
                             Jesteśmy absolwentkami kierunku Architektura na Politechnice Wrocławskiej oraz Krakowskiej. 
                             Doświadczenie w projektowaniu zdobywałyśmy zarówno w trakcie studiów, jak i podczas pracy zawodowej. 
                             Na swoim koncie, oprócz projektów wnętrz domów oraz mieszkań, posiadamy projekty komercyjne oraz wnętrza pod inwestycje. 
                             Podejmiemy się różnych wyzwań i pomożemy Ci stworzyć Twoją wymarzoną przestrzeń - zapraszamy do kontaktu! 
                         </p>
-                        <button>DOWIEDZ SIĘ WIĘCEJ</button>
+                        <button className="mt-4 px-8 py-4 bg-mochi-orange rounded-lg">DOWIEDZ SIĘ WIĘCEJ</button>
                     </div>
+                </div>
+            </section>
+            <section className="section-realisations rounded-b-lg">
+                <div className="my-36 text-left text-mochi-orange ml-40 w-2/3">
+                    <h1>wybrane realizacje</h1>
+                    <p className="my-10">
+                        Poznaj wybrane projekty, które świadczą o naszym zaangażowaniu, kreatywności i profesjonalizmie. 
+                        Aby zobaczyć pełne portfolio, odwiedź nasz profil na <a href=''><u>Behance</u></a>, gdzie znajdziesz więcej inspirujących realizacji.
+                    </p>
+                </div>
+                <img className="mb-6" src={real1}></img>
+                <img className="mb-6" src={real2}></img>
+                <img className="mb-20" src={real3}></img>
+            </section>
+            <section className="section-idea center text-mochi-orange bg-mochi-brown">
+                <div className="my-36 w-2/3">
+                    <img className="mb-10 mx-auto" src={bulb}></img>
+                    <h1 className="mb-10">masz pomysł na swoje wnętrze?</h1>
+                    <p>
+                        Martwi Cię natłok i różnorodność możliwości oraz rozwiązań? Zaufaj nam - pomożemy Ci przejść przez ten proces. 
+                        Opisz nam swoje potrzeby a my zrobimy wszystko co w naszej mocy aby zrealizować Twoje pomysły.
+                    </p>
                 </div>
             </section>
         </>

@@ -14,7 +14,8 @@ export default {
     colors: {
       'mochi-orange': '#D44E31',
       'mochi-yellow': '#F4F0E6',
-      'mochi-white': '#EFEFEF'
+      'mochi-white': '#EFEFEF',
+      'mochi-brown': "#E8E3E3"
     },
     extend: {
       fontFamily: {
