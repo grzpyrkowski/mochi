@@ -84,6 +84,16 @@ footer button {
   text-transform: uppercase;
 }
 
+.mochi-button {
+  @apply
+  px-8 
+  py-4 
+  text-mochi-white
+  bg-mochi-orange 
+  rounded-lg
+  uppercase;
+}
+
 /* main */
 main img {
   border-radius: 1em;
