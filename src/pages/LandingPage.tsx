@@ -56,9 +56,9 @@ export default function LandingPage() {
                             Jesteśmy absolwentkami kierunku Architektura na Politechnice Wrocławskiej oraz Krakowskiej. 
                             Doświadczenie w projektowaniu zdobywałyśmy zarówno w trakcie studiów, jak i podczas pracy zawodowej. 
                             Na swoim koncie, oprócz projektów wnętrz domów oraz mieszkań, posiadamy projekty komercyjne oraz wnętrza pod inwestycje. 
-                            Podejmiemy się różnych wyzwań i pomożemy Ci stworzyć Twoją wymarzoną przestrzeń - zapraszamy do kontaktu! 
+                            Podejmiemy się różnych wyzwań i pomożemy Ci stworzyć Twoją wymarzoną przestrzeń - zapraszamy do kontaktu!
                         </p>
-                        <button className="mt-4 px-8 py-4 bg-mochi-orange rounded-lg">DOWIEDZ SIĘ WIĘCEJ</button>
+                        <button className="mochi-button mt-4">DOWIEDZ SIĘ WIĘCEJ</button>
                     </div>
                 </div>
             </section>
@@ -82,6 +82,7 @@ export default function LandingPage() {
                         Martwi Cię natłok i różnorodność możliwości oraz rozwiązań? Zaufaj nam - pomożemy Ci przejść przez ten proces. 
                         Opisz nam swoje potrzeby a my zrobimy wszystko co w naszej mocy aby zrealizować Twoje pomysły.
                     </p>
+                    <button className="mochi-button mt-8">sprawdź naszą ofertę</button>
                 </div>
             </section>
         </>
