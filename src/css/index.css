@@ -54,11 +54,17 @@ body {
 }
 
 header {
-  @apply bg-mochi-white
+  @apply
   text-mochi-orange text-xl
   px-10 py-5
   flex
   place-content-evenly;
+  transition: 0.3s ease;
+}
+
+header:hover {
+  @apply bg-mochi-orange
+  text-mochi-white;
 }
 
 .nav-logo {
@@ -87,15 +93,30 @@ footer button {
 .mochi-button {
   @apply
   px-8 
-  py-4 
+  py-4
+  mt-8
   text-mochi-white
-  bg-mochi-orange 
+  bg-mochi-orange
+  border-solid
+  border-2
+  border-mochi-orange
   rounded-lg
   uppercase;
+  transition: 0.3s;
+}
+
+.mochi-button:hover {
+  @apply
+  bg-opacity-0
+  text-mochi-orange;
 }
 
 a {
   text-decoration: none;
+}
+
+header a {
+  display: flex;
 }
 
 /* main */

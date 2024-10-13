@@ -7,6 +7,7 @@ import real2 from "../data/pictures/landing_page/realisation_2.png"
 import real3 from "../data/pictures/landing_page/realisation_3.png"
 import sign from "../data/pictures/layout/sign.svg"
 import bulb from "../data/pictures/landing_page/lightbulb.svg"
+import MochiButton from "../components/MochiButton"
 
 export default function LandingPage() {
     return (
@@ -58,7 +59,10 @@ export default function LandingPage() {
                             Na swoim koncie, oprócz projektów wnętrz domów oraz mieszkań, posiadamy projekty komercyjne oraz wnętrza pod inwestycje. 
                             Podejmiemy się różnych wyzwań i pomożemy Ci stworzyć Twoją wymarzoną przestrzeń - zapraszamy do kontaktu!
                         </p>
-                        <button className="mochi-button mt-4">DOWIEDZ SIĘ WIĘCEJ</button>
+                        <MochiButton 
+                            value="dowiedz się więcej"
+                            url="/o-nas"
+                        />
                     </div>
                 </div>
             </section>
@@ -82,7 +86,10 @@ export default function LandingPage() {
                         Martwi Cię natłok i różnorodność możliwości oraz rozwiązań? Zaufaj nam - pomożemy Ci przejść przez ten proces. 
                         Opisz nam swoje potrzeby a my zrobimy wszystko co w naszej mocy aby zrealizować Twoje pomysły.
                     </p>
-                    <button className="mochi-button mt-8">sprawdź naszą ofertę</button>
+                    <MochiButton 
+                        value="sprawdź naszą ofertę"
+                        url=""
+                    />
                 </div>
             </section>
         </>
