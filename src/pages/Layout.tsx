@@ -1,5 +1,5 @@
 import HeaderButton from "../components/HeaderButton.tsx";
-import {Outlet} from "react-router-dom";
+import {Outlet, Link} from "react-router-dom";
 import sign from "../data/pictures/layout/sign.svg";
 import fb from "../data/pictures/layout/facebook.svg";
 import ig from "../data/pictures/layout/instagram.svg";
@@ -12,12 +12,16 @@ export default function Layout() {
         <>
             <header>
                 <div className="nav-logo">
-                    <img className="w-5" alt="sign" src={sign}></img>
+                    <Link to="/">
+                        <img className="w-5" alt="sign" src={sign}></img>
+                    </Link>
                 </div>
                 <div className="w-6/12 flex place-content-between">
-                    <HeaderButton
-                        value="o nas"
-                    />
+                    <Link to="/o-nas">
+                        <HeaderButton
+                            value="o nas"
+                        />
+                    </Link>
                     <HeaderButton
                         value="projekty"
                     />

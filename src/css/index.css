@@ -94,6 +94,10 @@ footer button {
   uppercase;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* main */
 main img {
   border-radius: 1em;
