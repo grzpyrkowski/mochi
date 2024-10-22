@@ -138,3 +138,9 @@ main img {
 .section-realisations img {
   @apply mx-auto;
 }
+
+.blures {
+  border-radius: 1em;
+  max-width: 1376px;
+  max-height: 500px;
+}

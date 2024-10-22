@@ -1,15 +1,31 @@
-import HorizontalPhotoPanel from "../components/VerticalWizPanel"
-import logo from "../data/pictures/landing_page/logo.svg"
-import wiz1 from "../data/pictures/landing_page/wiz_1.png"
-import wspolne1 from "../data/pictures/landing_page/wspolne_1.png"
-import real1 from "../data/pictures/landing_page/realisation_1.png"
-import real2 from "../data/pictures/landing_page/realisation_2.png"
-import real3 from "../data/pictures/landing_page/realisation_3.png"
-import sign from "../data/pictures/layout/sign.svg"
-import bulb from "../data/pictures/landing_page/lightbulb.svg"
-import MochiButton from "../components/MochiButton"
+import { motion, useScroll, useTransform } from "framer-motion";
+import HorizontalPhotoPanel from "../components/VerticalWizPanel";
+import MochiButton from "../components/MochiButton";
+import logo from "../data/pictures/landing_page/logo.svg";
+import wiz1 from "../data/pictures/landing_page/wiz_1.png";
+import wspolne1 from "../data/pictures/landing_page/wspolne_1.png";
+import real1 from "../data/pictures/landing_page/realisation_1.png";
+import real2 from "../data/pictures/landing_page/realisation_2.png";
+import real3 from "../data/pictures/landing_page/realisation_3.png";
+import sign from "../data/pictures/layout/sign.svg";
+import bulb from "../data/pictures/landing_page/lightbulb.svg";
+// import { useRef } from "react";
+import LPRealisation from "../components/LPRealisation";
 
 export default function LandingPage() {
+
+    // const ref = useRef(null);
+    // const { scrollYProgress } = useScroll({
+    //     target: ref,
+    //     offset: ["end end", "start start"]
+    // });
+
+    // const heightFirstAndFourth = useTransform(
+    //     scrollYProgress,
+    //     [1, 0],
+    //     ["7rem", 0]
+    // );
+
     return (
         <>
             <section className="section-logo bg-mochi-gray text-mochi-orange text-2xl">
@@ -23,36 +39,40 @@ export default function LandingPage() {
                 </div>
             </section>
             <section className="section-vertical-wiz bg-mochi-gray flex place-content-between">
-                <div className="mt-28">
+                <motion.div className="mt-28"
+                    // style={{
+                    //     pathLength: scrollYProgress
+                    // }}
+                >
                     <HorizontalPhotoPanel
                         url1={wiz1}
                         url2={wiz1}
                     />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div>
                     <HorizontalPhotoPanel
                         url1={wiz1}
                         url2={wiz1}
                     />
-                </div>
+                </motion.div>
                 <div className="mt-48">
                     <HorizontalPhotoPanel
                         url1={wiz1}
                         url2={wiz1}
                     />
                 </div>
-                <div className="mt-28">
+                <motion.div className="mt-28">
                     <HorizontalPhotoPanel
                         url1={wiz1}
                         url2={wiz1}
                     />
-                </div>
+                </motion.div>
             </section>
             <section className="section-meetus">
                 <div className="relative">
                     <img className="block" alt="" src={wspolne1}></img>
                     <div className="absolute z-10 text-left w-2/3 bottom-20 left-40 text-mochi-white">
-                    <div className="flex"><h1 className="mb-5">POZNAJ MO.CHI DESIGN</h1><img className="rounded-none w-5 ml-8 mb-5" src={sign}></img></div>
+                        <div className="flex"><h1 className="mb-5">POZNAJ MO.CHI DESIGN</h1><img className="rounded-none w-5 ml-8 mb-5" src={sign}></img></div>
                         <p>
                             Jesteśmy absolwentkami kierunku Architektura na Politechnice Wrocławskiej oraz Krakowskiej. 
                             Doświadczenie w projektowaniu zdobywałyśmy zarówno w trakcie studiów, jak i podczas pracy zawodowej. 
@@ -74,9 +94,24 @@ export default function LandingPage() {
                         Aby zobaczyć pełne portfolio, odwiedź nasz profil na <a href=''><u>Behance</u></a>, gdzie znajdziesz więcej inspirujących realizacji.
                     </p>
                 </div>
-                <img className="mb-6" src={real1}></img>
-                <img className="mb-6" src={real2}></img>
-                <img className="mb-20" src={real3}></img>
+                <LPRealisation 
+                    url={real1}
+                    title="Salon w kamienicy"
+                    desc="Salon powstał siema nara"
+                    year={2024}
+                />
+                <LPRealisation 
+                    url={real2}
+                    title="Salon w kamienicy"
+                    desc="Salon powstał siema nara"
+                    year={2024}
+                />
+                <LPRealisation 
+                    url={real3}
+                    title="Salon w kamienicy"
+                    desc="Salon powstał siema nara"
+                    year={2024}
+                />
             </section>
             <section className="section-idea center text-mochi-orange bg-mochi-brown">
                 <div className="my-36 w-2/3">
