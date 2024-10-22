@@ -2,6 +2,7 @@ import wspolne2 from '../data/pictures/about/wspolne_2.png';
 import misianc from '../data/pictures/about/misia_nc.png';
 import madzianc from '../data/pictures/about/madzia_nc.png';
 import mail from '../data/pictures/about/envelope.svg';
+import MochiButton from '../components/MochiButton';
 
 export default function About() {
     return (
@@ -22,7 +23,10 @@ export default function About() {
                         zadbamy o harmonię zastosowanych rozwiązań, ergonomię i dostosowanie wnętrza pod Twoje preferencje. 
                         Kierując się tymi wartościami, stworzymy dla Ciebie idealne wnętrze - zarówno funkcjonalne jak i atrakcyjne wizualnie.
                     </p>
-                    <button className="mochi-button mt-8">sprawdź naszą ofertę</button>
+                    <MochiButton 
+                        value="sprawdź naszą ofertę"
+                        url=""
+                    />
                 </div>
             </section>
             <section className='section-about-us mt-24 flex mx-auto place-content-between w-4/5'>
@@ -36,7 +40,10 @@ export default function About() {
                     <p>
                         Dokonamy bezpłatnej wyceny projektu Twojego wymarzonego <br/> wnętrza lub odpowiemy na wszelkie wątpliwości.
                     </p>
-                    <button className="mochi-button mt-8">sprawdź naszą ofertę</button>
+                    <MochiButton 
+                        value="sprawdź naszą ofertę"
+                        url=""
+                    />
                 </div>
             </section>
         </>

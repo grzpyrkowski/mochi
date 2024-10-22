@@ -1,38 +1,42 @@
-import HeaderButton from "../components/HeaderButton.tsx";
 import {Outlet} from "react-router-dom";
-import sign from "../data/pictures/layout/sign.svg";
-import fb from "../data/pictures/layout/facebook.svg";
-import ig from "../data/pictures/layout/instagram.svg";
-import be from "../data/pictures/layout/behance.svg";
+import signOrange from "../data/pictures/layout/sign.svg";
+import signWhite from "../data/pictures/layout/sign_white.svg";
+import fbOrange from "../data/pictures/layout/facebook.svg";
+import fbWhite from "../data/pictures/layout/facebook_white.svg";
+import igOrange from "../data/pictures/layout/instagram.svg";
+import igWhite from "../data/pictures/layout/instagram_white.svg";
+import beOrange from "../data/pictures/layout/behance.svg";
+import beWhite from "../data/pictures/layout/behance_white.svg";
 
 import logo from "../data/pictures/landing_page/logo.svg";
+import { useState } from "react";
+import Header from "../components/Header.tsx";
 
 export default function Layout() {
+
+    const [hover, setHover] = useState(false);
+
     return(
         <>
-            <header>
-                <div className="nav-logo">
-                    <img className="w-5" alt="sign" src={sign}></img>
-                </div>
-                <div className="w-6/12 flex place-content-between">
-                    <HeaderButton
-                        value="o nas"
-                    />
-                    <HeaderButton
-                        value="projekty"
-                    />
-                    <HeaderButton
-                        value="oferta"
-                    />
-                    <HeaderButton
-                        value="kontakt"
-                    />
-                </div>
-                <div className="nav-icons flex">
-                    <img alt="fb" src={fb}></img>
-                    <img alt="ig" src={ig}></img>
-                    <img alt="tw" src={be}></img>
-                </div>
+            <header 
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+            >
+                {hover ? 
+                <Header 
+                    urlSign={signWhite}
+                    urlFB={fbWhite}
+                    urlIG={igWhite}
+                    urlBE={beWhite}
+                />
+                : 
+                <Header 
+                    urlSign={signOrange}
+                    urlFB={fbOrange}
+                    urlIG={igOrange}
+                    urlBE={beOrange}
+                />
+                }
             </header>
             <main>
                 <Outlet />
@@ -51,9 +55,9 @@ export default function Layout() {
                     <button>formularz kontaktowy</button>
                     <button>email@gmail.com</button>
                     <div>
-                        <button className="mx-1"><img src={fb}></img></button>
-                        <button className="mx-1"><img src={ig}></img></button>
-                        <button className="mx-1"><img src={be}></img></button>
+                        <button className="mx-1"><img src={fbOrange}></img></button>
+                        <button className="mx-1"><img src={igOrange}></img></button>
+                        <button className="mx-1"><img src={beOrange}></img></button>
                     </div>
                 </div>
             </footer>
