@@ -144,3 +144,18 @@ main img {
   max-width: 1376px;
   max-height: 500px;
 }
+
+.box {
+  width: 440px;
+  height: 500px;
+}
+
+.project-outlet img {
+  margin-top: 2rem;
+}
+
+.project-presentation {
+  max-width: 1376px;
+  display: flex;
+  place-content: beetwen;
+}
