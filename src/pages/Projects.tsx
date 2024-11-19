@@ -4,9 +4,17 @@ import { motion } from "framer-motion";
 import living_room from "../data/pictures/projects/cropped_realisation_1.png"
 import bathroom from "../data/pictures/projects/cropped_realisation_2.png"
 import kitchen from "../data/pictures/projects/cropped_realisation_3.png"
-
+import back_to_top from "../data/pictures/layout/back_to_start_arrow.svg"
 
 export default function Projects() {
+
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
     return (
         <>
             <section className="projects-header">
@@ -46,6 +54,12 @@ export default function Projects() {
             </section>
             <section className="project-outlet">
                 <Outlet />
+            </section>
+            <section className="back-to-top center">
+                <div className="mt-20 cursor-pointer" onClick={handleScroll}>
+                    <img src={back_to_top} className="center"/>
+                    <p className="uppercase mt-4">powrót do góry strony</p>
+                </div>
             </section>
         </>
     )
