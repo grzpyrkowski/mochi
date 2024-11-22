@@ -23,10 +23,10 @@ export default function Header({urlSign, urlFB, urlIG, urlBE}: Props) {
                 <Link to="/projekty">
                     <HeaderButton value="projekty"/>
                 </Link>
-                <Link to="">                        
+                <Link to="/oferta">
                     <HeaderButton value="oferta"/>
                 </Link>
-                <Link to="">                        
+                <Link to="/kontakt">
                     <HeaderButton value="kontakt"/>
                 </Link>
             </div>
