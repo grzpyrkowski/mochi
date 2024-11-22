@@ -6,7 +6,10 @@ import Projects from "./pages/Projects.tsx";
 import LivingRoom from "./pages/projects/LivingRoom.tsx";
 import Bathroom from "./pages/projects/Bathroom.tsx";
 import Kitchen from "./pages/projects/Kitchen.tsx";
-
+import Offer from "./pages/Offer.tsx";
+import StandardOffer from "./pages/offers/StandardOffer.tsx";
+import BasicOffer from "./pages/offers/BasicOffer.tsx";
+import AdvancedOffer from "./pages/offers/AdvancedOffer.tsx";
 
 export default function App() {
 
@@ -19,6 +22,11 @@ export default function App() {
                     <Route index element={<LivingRoom />} />
                     <Route path={"/projekty/lazienka"} element={<Bathroom />} />
                     <Route path={"/projekty/kuchnia"} element={<Kitchen />} />
+                </Route>
+                <Route path={"/oferta"} element={<Offer />}>
+                    <Route index element={<StandardOffer />} />
+                    <Route path={"/oferta/pakiet-podstawowy"} element={<BasicOffer />} />
+                    <Route path={"/oferta/pakiet-zaawansowany"} element={<AdvancedOffer />} />
                 </Route>
             </Route>
         )

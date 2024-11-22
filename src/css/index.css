@@ -159,3 +159,27 @@ main img {
   display: flex;
   place-content: beetwen;
 }
+
+.link-offer-package {
+  @apply
+  w-1/4
+  mx-4
+  ;
+}
+
+.offer-package {
+  @apply 
+  border-mochi-orange
+  rounded-md
+  content-center
+  bg-mochi-brown
+  mt-10
+  uppercase;
+  border: solid 1px;
+  height: 40vh;
+}
+
+.offer-package h1, hr, p {
+  @apply 
+  m-5;
+}
