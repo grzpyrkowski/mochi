@@ -163,8 +163,7 @@ main img {
 .link-offer-package {
   @apply
   w-1/4
-  mx-4
-  ;
+  mx-4;
 }
 
 .offer-package {
@@ -182,6 +181,10 @@ main img {
 .offer-package h1, hr, p {
   @apply 
   m-5;
+}
+
+.choose-offer-section {
+  height: 45vh;
 }
 
 .form-input {

@@ -123,7 +123,7 @@ export default function LandingPage() {
                     </p>
                     <MochiButton 
                         value="sprawdź naszą ofertę"
-                        url=""
+                        url="/oferta"
                     />
                 </div>
             </section>
