@@ -183,3 +183,12 @@ main img {
   @apply 
   m-5;
 }
+
+.form-input {
+  background-color: #00000030;
+  border: 1px white solid;
+  border-radius: 0.25em;
+  padding: 0.5rem;
+  width: 100%;
+  backdrop-filter: blur(3px);
+}
