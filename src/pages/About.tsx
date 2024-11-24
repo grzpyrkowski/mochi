@@ -11,8 +11,7 @@ export default function About() {
                 <img className='block' src={wspolne2}></img>
                 <h1 className='absolute z-10 text-left left-20 top-1/2'>poznajmy się!</h1>
             </section>
-            <section className='section-about-desc mt-28 text-left w-4/5 center flex-col'>
-                <div>
+            <section className='section-about-desc mt-24 text-left w-4/5 center flex-col'>
                     <p>
                         Hej, z tej strony Magda i Michalina z mo.chi design - bardzo nam miło, że zechciałeś/aś odwiedzić naszą stronę :)<br/><br/>
                         Jesteśmy pracownią zajmującą się projektami wnętrz - posiadamy doświadczenie w projektach wnętrz zarówno prywatnych, 
@@ -23,11 +22,6 @@ export default function About() {
                         zadbamy o harmonię zastosowanych rozwiązań, ergonomię i dostosowanie wnętrza pod Twoje preferencje. 
                         Kierując się tymi wartościami, stworzymy dla Ciebie idealne wnętrze - zarówno funkcjonalne jak i atrakcyjne wizualnie.
                     </p>
-                    <MochiButton 
-                        value="sprawdź naszą ofertę"
-                        url=""
-                    />
-                </div>
             </section>
             <section className='section-about-us mt-24 flex mx-auto place-content-between w-4/5'>
                 <img src={misianc}></img>
@@ -42,7 +36,7 @@ export default function About() {
                     </p>
                     <MochiButton 
                         value="sprawdź naszą ofertę"
-                        url=""
+                        url="/oferta"
                     />
                 </div>
             </section>

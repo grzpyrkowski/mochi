@@ -18,18 +18,23 @@ export default function OfferPackage({chose, title, price, src} : Props) {
                 animate = {{
                     color: '#EFEFEF', 
                     backgroundColor: '#D44E31', 
-                    height: '45vh',
-                    marginTop: '1rem',
+                    height: '44vh',
+                    width: "105%",
+                    x: "-0.5rem",
+                    y: "-1.1rem",
                     border: 'none'
                 }}
+                transition={{
+                    type: "tween"
+                }}
                 >
-                    <h2 className="text-4xl">{title}</h2>
+                    <h2 className="text-2xl">{title}</h2>
                     <hr />
-                    <p className="text-3xl">{price} zł / m2</p>
+                    <p className="text-2xl">{price} zł / m2</p>
                 </motion.div>
                 :
                 <div className="offer-package">
-                    <h2 className="text-3xl">{title}</h2>
+                    <h2 className="text-2xl">{title}</h2>
                     <hr />
                     <p className="text-2xl">{price} zł / m2</p>
                 </div>

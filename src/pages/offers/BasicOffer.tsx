@@ -38,8 +38,7 @@ export default function BasicOffer() {
                     <li>Wizualizacje 3D z 1 poprawką do przedstawionej propozycji</li>
                     <li>Lista zakupów</li>
                 </ul>
-                <p className="mt-10 mb-3 mx-0">w tym pakiecie dostosowujemy się do istniejącego/zaplanowanego układu elektryki oraz wod-kan;</p>
-                <button className="mochi-button">kontakt</button>
+                <p className="mt-10 mx-0">w tym pakiecie dostosowujemy się do istniejącego/zaplanowanego układu elektryki oraz wod-kan;</p>
             </div>
         </section>
     </>
