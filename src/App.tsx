@@ -10,6 +10,7 @@ import Offer from "./pages/Offer.tsx";
 import StandardOffer from "./pages/offers/StandardOffer.tsx";
 import BasicOffer from "./pages/offers/BasicOffer.tsx";
 import AdvancedOffer from "./pages/offers/AdvancedOffer.tsx";
+import Contact from "./pages/Contact.tsx";
 
 export default function App() {
 
@@ -28,6 +29,7 @@ export default function App() {
                     <Route path={"/oferta/pakiet-podstawowy"} element={<BasicOffer />} />
                     <Route path={"/oferta/pakiet-zaawansowany"} element={<AdvancedOffer />} />
                 </Route>
+                <Route path={"/kontakt"} element={<Contact />} />
             </Route>
         )
     );
