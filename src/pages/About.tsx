@@ -1,10 +1,18 @@
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import wspolne2 from '../data/pictures/about/wspolne_2.png';
-import misianc from '../data/pictures/about/misia_nc.png';
-import madzianc from '../data/pictures/about/madzia_nc.png';
+import misiaNC from '../data/pictures/about/misia_nc.png';
+import madziaNC from '../data/pictures/about/madzia_nc.png';
+import misiaColor from '../data/pictures/about/misia_color.png';
+import madziaColor from '../data/pictures/about/madzia_color.png';
 import mail from '../data/pictures/about/envelope.svg';
 import MochiButton from '../components/MochiButton';
 
 export default function About() {
+
+    const [hoverMisia, setHoverMisia] = useState(false);
+    const [hoverMadzia, setHoverMadzia] = useState(false);
+
     return (
         <>
             <section className='section-about-banner relative flex'>
@@ -24,8 +32,26 @@ export default function About() {
                     </p>
             </section>
             <section className='section-about-us mt-24 flex mx-auto place-content-between w-4/5'>
-                <img src={misianc}></img>
-                <img src={madzianc}></img>
+                <div className='relative'>
+                    <motion.img
+                        src={misiaNC}
+                        className='absolute'
+                        whileHover={{
+                            opacity: 0
+                        }}
+                    />
+                    <img src={misiaColor} />
+                </div>
+                <div>
+                    <motion.img
+                        src={madziaNC}
+                        className='absolute'
+                        whileHover={{
+                            opacity: 0
+                        }}
+                    />
+                    <img src={madziaColor} />
+                </div>
             </section>
             <section className="section-idea center mt-24 text-mochi-orange bg-mochi-brown">
                 <div className="my-36 w-2/3">
