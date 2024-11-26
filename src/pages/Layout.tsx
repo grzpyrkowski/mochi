@@ -1,4 +1,4 @@
-import {Outlet} from "react-router-dom";
+import {Outlet, Link} from "react-router-dom";
 import { useState } from "react";
 import Header from "../components/Header.tsx";
 import ScrollToTop from '../components/ScrollToTop.tsx'
@@ -49,19 +49,19 @@ export default function Layout() {
             <footer>
                 <img className="mx-auto mt-20 w-1/5" src={logo}></img>
                 <div className="flex place-content-between w-3/5 mx-auto my-10 uppercase">
-                    <a href="/">strona główna</a>
-                    <a href="/o-nas">o nas</a>
-                    <a href="/projekty">projekty</a>
-                    <a href="/oferta">oferta</a>
-                    <a href="/kontakt">kontakt</a>
-                    <a>polityka prywatności</a>
+                    <Link to="/">strona główna</Link>
+                    <Link to="/o-nas">o nas</Link>
+                    <Link to="/projekty">projekty</Link>
+                    <Link to="/oferta">oferta</Link>
+                    <Link to="/kontakt">kontakt</Link>
+                    <Link to="">polityka prywatności</Link>
                 </div>
                 <div className="flex place-content-between w-2/5 mx-auto my-10">
                     <button onClick={handleClick}>contactmochidesign@gmail.com</button>
                     <div className="flex">
-                        <a className="mx-2"><img src={fbOrange}></img></a>
-                        <a className="mx-2"><img src={igOrange}></img></a>
-                        <a className="mx-2"><img src={beOrange}></img></a>
+                        <Link to="" className="mx-2"><img src={fbOrange}></img></Link>
+                        <Link to="" className="mx-2"><img src={igOrange}></img></Link>
+                        <Link to="" className="mx-2"><img src={beOrange}></img></Link>
                     </div>
                 </div>
             </footer>

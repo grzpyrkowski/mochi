@@ -11,12 +11,13 @@ import StandardOffer from "./pages/offers/StandardOffer.tsx";
 import BasicOffer from "./pages/offers/BasicOffer.tsx";
 import AdvancedOffer from "./pages/offers/AdvancedOffer.tsx";
 import Contact from "./pages/Contact.tsx";
+import ErrorBoundary from "./pages/ErrorBoundary.tsx";
 
 export default function App() {
 
     const router = createBrowserRouter(
         createRoutesFromElements(
-            <Route element={<Layout />} >
+            <Route element={<Layout />} errorElement={<ErrorBoundary />}>
                 <Route path={"/"} element={<LandingPage />} />
                 <Route path={"/o-nas"} element={<About />} />
                 <Route path={"/projekty"} element={<Projects />}>
