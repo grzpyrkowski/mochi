@@ -195,3 +195,14 @@ main img {
   width: 100%;
   backdrop-filter: blur(3px);
 }
+
+.shade {
+  background-color: #00000025;
+  border-radius: 1em;
+}
+
+.shadeAndBlur {
+  background-color: #00000075;
+  backdrop-filter: blur(3px);
+  border-radius: 1em;
+}

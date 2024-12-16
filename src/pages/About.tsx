@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { motion } from 'framer-motion';
 import wspolne2 from '../data/pictures/about/wspolne_2.png';
 import misiaNC from '../data/pictures/about/misia_nc.png';
@@ -9,10 +8,6 @@ import mail from '../data/pictures/about/envelope.svg';
 import MochiButton from '../components/MochiButton';
 
 export default function About() {
-
-    const [hoverMisia, setHoverMisia] = useState(false);
-    const [hoverMadzia, setHoverMadzia] = useState(false);
-
     return (
         <>
             <section className='section-about-banner relative flex'>
