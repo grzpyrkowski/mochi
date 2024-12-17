@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import HorizontalPhotoPanel from "../components/VerticalWizPanel";
-import MochiButton from "../components/MochiButton";
+import HorizontalPhotoPanel from "./components/VerticalWizPanel";
+import MochiButton from "./components/MochiButton";
 import logo from "../data/pictures/landing_page/logo.svg";
 import wiz1 from "../data/pictures/landing_page/wiz_1.png";
 import wspolne1 from "../data/pictures/landing_page/wspolne_1.png";
@@ -9,23 +9,9 @@ import real2 from "../data/pictures/landing_page/realisation_2.png";
 import real3 from "../data/pictures/landing_page/realisation_3.png";
 import sign from "../data/pictures/layout/sign.svg";
 import bulb from "../data/pictures/landing_page/lightbulb.svg";
-// import { useRef } from "react";
-import LPRealisation from "../components/LPRealisation";
+import LPRealisation from "./components/LPRealisation";
 
 export default function LandingPage() {
-
-    // const ref = useRef(null);
-    // const { scrollYProgress } = useScroll({
-    //     target: ref,
-    //     offset: ["end end", "start start"]
-    // });
-
-    // const heightFirstAndFourth = useTransform(
-    //     scrollYProgress,
-    //     [1, 0],
-    //     ["7rem", 0]
-    // );
-
     return (
         <>
             <section className="section-logo bg-mochi-gray text-mochi-orange text-2xl">
@@ -39,11 +25,7 @@ export default function LandingPage() {
                 </div>
             </section>
             <section className="section-vertical-wiz bg-mochi-gray flex place-content-between">
-                <motion.div className="mt-28"
-                    // style={{
-                    //     pathLength: scrollYProgress
-                    // }}
-                >
+                <motion.div className="mt-28">
                     <HorizontalPhotoPanel
                         url1={wiz1}
                         url2={wiz1}

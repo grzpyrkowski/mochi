@@ -1,7 +1,7 @@
 import {Outlet, Link} from "react-router-dom";
 import { useState } from "react";
-import Header from "../components/Header.tsx";
-import ScrollToTop from '../components/ScrollToTop.tsx'
+import Header from "./components/Header.tsx";
+import ScrollToTop from './components/ScrollToTop.tsx'
 import signOrange from "../data/pictures/layout/sign.svg";
 import signWhite from "../data/pictures/layout/sign_white.svg";
 import fbOrange from "../data/pictures/layout/facebook.svg";

@@ -1,5 +1,5 @@
 import { Outlet } from "react-router";
-import MochiButton from "../components/MochiButton";
+import MochiButton from "./components/MochiButton";
 
 export default function Offer() {
 

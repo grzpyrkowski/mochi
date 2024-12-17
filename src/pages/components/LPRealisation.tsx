@@ -28,31 +28,26 @@ export default function LPRealisation({url, title, desc, year}: Props) {
       }
 
     return (
-    <div className="relative flex text-mochi-white place-content-center" >
-        <img className="mb-6 block" src={url} />
-        <motion.div 
-            className="blures place-content-end absolute z-10 text-left w-full h-full"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-            animate={isHovered ? "hover" : "initial"}
-            whileHover={{
-                backgroundColor: "#00000070",
-                backdropFilter: "blur(8px)"
-            }}
-        >
+    <div className="flex text-mochi-white place-content-center relative text-left">
             <motion.div 
-                className="ml-20 mb-20"
+                className="w-full h-full mx-10 mb-20 absolute blures"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 animate={isHovered ? "hover" : "initial"}
+                whileHover={{
+                    backgroundColor: "#00000070",
+                    backdropFilter: "blur(8px)"
+                }}
                 variants={variants}
             >
-                <h2 className="text-2xl mb-2">{title}</h2>
-                <hr className="mr-20 mb-2"/>
-                <p className="mb-5">{desc}</p>
-                <p className="year ">{year}</p>
+                <div className="absolute w-full bottom-1/4 top-1/2 ml-20">
+                    <h2 className="text-2xl ml-5 mb-2">{title}</h2>
+                    <hr className="w-4/5 mr-20 mb-2"/>
+                    <p className="mb-5">{desc}</p>
+                    <p className="year ">{year}</p>
+                </div>
             </motion.div>
-        </motion.div>
+        <img className="mb-6 block" src={url} />
     </div>
     )
 }

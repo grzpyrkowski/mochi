@@ -5,7 +5,7 @@ import madziaNC from '../data/pictures/about/madzia_nc.png';
 import misiaColor from '../data/pictures/about/misia_color.png';
 import madziaColor from '../data/pictures/about/madzia_color.png';
 import mail from '../data/pictures/about/envelope.svg';
-import MochiButton from '../components/MochiButton';
+import MochiButton from './components/MochiButton';
 
 export default function About() {
     return (
