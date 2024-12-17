@@ -10,7 +10,9 @@ import igOrange from "../data/pictures/layout/instagram.svg";
 import igWhite from "../data/pictures/layout/instagram_white.svg";
 import beOrange from "../data/pictures/layout/behance.svg";
 import beWhite from "../data/pictures/layout/behance_white.svg";
+import back_to_top from "../data/pictures/layout/back_to_start_arrow.svg";
 import logo from "../data/pictures/landing_page/logo.svg";
+
 
 export default function Layout() {
 
@@ -18,6 +20,13 @@ export default function Layout() {
 
     function handleClick() {
         window.open('mailto:contactmochidesign@gmail.com')
+    }
+
+    const handleScroll = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     }
 
     return(
@@ -46,6 +55,12 @@ export default function Layout() {
             <main>
                 <Outlet />
             </main>
+            <section className="back-to-top center">
+                <div className="mt-20 cursor-pointer" onClick={handleScroll}>
+                    <img src={back_to_top} className="center"/>
+                    <p className="uppercase mt-4">powrót do góry strony</p>
+                </div>
+            </section>
             <footer>
                 <img className="mx-auto mt-20 w-1/5" src={logo}></img>
                 <div className="flex place-content-between w-3/5 mx-auto my-10 uppercase">
