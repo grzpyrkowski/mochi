@@ -1,4 +1,4 @@
-import MochiButton from "../components/MochiButton"
+import MochiButton from "./components/MochiButton"
 
 export default function ErrorBoundary() {
     return(

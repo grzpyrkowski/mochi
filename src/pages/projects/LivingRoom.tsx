@@ -8,10 +8,10 @@ export default function LivingRoom() {
         <>
             <img src={main} className='center'></img>
             <div className='project-presentation mx-8'>
-                <div className='photos w-3/5'>
-                    <img src={small1}></img>
-                    <img src={small2}></img>
-                    <img src={small3}></img>
+                <div className='photos w-3/5 relative'>
+                    <img src={small1} />
+                    <img src={small2} />
+                    <img src={small3} />
                 </div>
                 <div className='description w-2/5 mt-28'>
                     <h1>Salon w kamienicy</h1>

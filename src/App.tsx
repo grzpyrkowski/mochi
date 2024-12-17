@@ -3,9 +3,6 @@ import Layout from "./pages/Layout.tsx";
 import LandingPage from "./pages/LandingPage.tsx";
 import About from "./pages/About.tsx";
 import Projects from "./pages/Projects.tsx";
-import LivingRoom from "./pages/projects/LivingRoom.tsx";
-import Bathroom from "./pages/projects/Bathroom.tsx";
-import Kitchen from "./pages/projects/Kitchen.tsx";
 import Offer from "./pages/Offer.tsx";
 import StandardOffer from "./pages/offers/StandardOffer.tsx";
 import BasicOffer from "./pages/offers/BasicOffer.tsx";
@@ -20,11 +17,7 @@ export default function App() {
             <Route element={<Layout />} errorElement={<ErrorBoundary />}>
                 <Route path={"/"} element={<LandingPage />} />
                 <Route path={"/o-nas"} element={<About />} />
-                <Route path={"/projekty"} element={<Projects />}>
-                    <Route index element={<LivingRoom />} />
-                    <Route path={"/projekty/lazienka"} element={<Bathroom />} />
-                    <Route path={"/projekty/kuchnia"} element={<Kitchen />} />
-                </Route>
+                <Route path={"/projekty/:id"} element={<Projects />} />
                 <Route path={"/oferta"} element={<Offer />}>
                     <Route index element={<StandardOffer />} />
                     <Route path={"/oferta/pakiet-podstawowy"} element={<BasicOffer />} />
