@@ -66,7 +66,7 @@ export default function Layout() {
                 <div className="flex place-content-between w-3/5 mx-auto my-10 uppercase">
                     <Link to="/">strona główna</Link>
                     <Link to="/o-nas">o nas</Link>
-                    <Link to="/projekty">projekty</Link>
+                    <Link to="/projekty/salon">projekty</Link>
                     <Link to="/oferta">oferta</Link>
                     <Link to="/kontakt">kontakt</Link>
                     <Link to="">polityka prywatności</Link>
