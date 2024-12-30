@@ -3,7 +3,6 @@ import ProjectPanel from "./projects/ProjectPanel";
 import LivingRoom from "./projects/LivingRoom";
 import Kitchen from "./projects/Kitchen";
 import Bathroom from "./projects/Bathroom";
-// import ErrorBoundary from "../projects/ErrorBoundary";
 import living_room from "../data/pictures/projects/cropped_realisation_1.png"
 import bathroom from "../data/pictures/projects/cropped_realisation_2.png"
 import kitchen from "../data/pictures/projects/cropped_realisation_3.png"
@@ -61,8 +60,7 @@ export default function Projects() {
                             )
                         } else {
                             return (
-                                // <ErrorBoundary />
-                                <h1>Wybierz proszę projekt, który chcesz obejrzeć</h1>
+                                <h1 className="mt-20 text-4xl">Wybierz proszę projekt, który chcesz obejrzeć</h1>
                             )
                         }
                     })()
