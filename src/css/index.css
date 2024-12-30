@@ -193,7 +193,7 @@ main img {
   border-radius: 0.25em;
   padding: 0.5rem;
   width: 100%;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);  
 }
 
 .shade {
@@ -205,4 +205,12 @@ main img {
   background-color: #00000075;
   backdrop-filter: blur(3px);
   border-radius: 1em;
+}
+
+.error-message {
+  display: none;
+}
+
+.error-message:invalid {
+  display: block;
 }
