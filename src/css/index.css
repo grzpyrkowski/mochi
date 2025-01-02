@@ -75,9 +75,8 @@ header:hover {
   width: 10%;
 }
 
-.nav-icons img {
-  @apply mx-2
-  w-1/5;
+.nav-icons a {
+  @apply mx-2;
 }
 
 h1 {

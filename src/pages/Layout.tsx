@@ -15,7 +15,6 @@ import logo from "../data/pictures/landing_page/logo.svg";
 
 
 export default function Layout() {
-
     const [hover, setHover] = useState(false);
 
     function handleClick() {
@@ -74,9 +73,9 @@ export default function Layout() {
                 <div className="flex place-content-between w-2/5 mx-auto my-10">
                     <button onClick={handleClick}>contactmochidesign@gmail.com</button>
                     <div className="flex">
-                        <Link to="" className="mx-2"><img src={fbOrange}></img></Link>
-                        <Link to="" className="mx-2"><img src={igOrange}></img></Link>
-                        <Link to="" className="mx-2"><img src={beOrange}></img></Link>
+                        <Link to="https://www.facebook.com/profile.php?id=61561418972337" className="mx-2"><img src={fbOrange}></img></Link>
+                        <Link to="https://www.instagram.com/mo.chidesign/" className="mx-2"><img src={igOrange}></img></Link>
+                        <Link to="https://www.behance.net/michalimietlin" className="mx-2"><img src={beOrange}></img></Link>
                     </div>
                 </div>
             </footer>
