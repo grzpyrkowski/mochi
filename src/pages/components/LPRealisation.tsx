@@ -29,7 +29,8 @@ export default function LPRealisation({url, title, desc, year}: Props) {
       }
 
     return (
-    <div className="flex text-mochi-white place-content-center relative text-left">
+    <div className="flex-center text-mochi-white relative text-left">
+            <img className="absolute rounded-none w-6 top-12 right-20 z-10" src={sign}></img>
             <motion.div 
                 className="w-full h-full mx-10 mb-20 absolute blures"
                 onMouseEnter={handleMouseEnter}
@@ -41,7 +42,6 @@ export default function LPRealisation({url, title, desc, year}: Props) {
                 }}
                 variants={variants}
             >
-                <img className="absolute rounded-none w-6 top-12 right-12" src={sign}></img>
                 <div className="absolute w-full bottom-1/4 top-1/2 ml-20">
                     <h2 className="text-2xl ml-5 mb-2">{title}</h2>
                     <hr className="w-4/5 mr-20 mb-2"/>

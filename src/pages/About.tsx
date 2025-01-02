@@ -26,7 +26,7 @@ export default function About() {
                         Kierując się tymi wartościami, stworzymy dla Ciebie idealne wnętrze - zarówno funkcjonalne jak i atrakcyjne wizualnie.
                     </p>
             </section>
-            <section className='section-about-us mt-24 flex mx-auto place-content-between w-4/5'>
+            <section className='section-about-us mt-24 flex-between mx-auto w-4/5'>
                 <PortraitPanel 
                     name = "Michalina Mietlińska"
                     title = "mgr inż. architekt"

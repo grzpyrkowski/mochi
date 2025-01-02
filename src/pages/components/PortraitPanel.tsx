@@ -34,7 +34,7 @@ export default function PortraitPanel({name, title, srcNoColor, srcColor} : Prop
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <div className='absolute w-full z-10 flex place-content-between'>
+            <div className='absolute w-full z-10 flex-beetwen'>
                 <p className='text-left'>
                     <span className='uppercase'>{name}</span>
                     <br/>

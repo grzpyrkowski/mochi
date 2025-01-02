@@ -62,7 +62,7 @@ export default function Layout() {
             </section>
             <footer>
                 <img className="mx-auto mt-20 w-1/5" src={logo}></img>
-                <div className="flex place-content-between w-3/5 mx-auto my-10 uppercase">
+                <div className="flex-between w-3/5 mx-auto my-10 uppercase">
                     <Link to="/">strona główna</Link>
                     <Link to="/o-nas">o nas</Link>
                     <Link to="/projekty/salon">projekty</Link>
@@ -70,7 +70,7 @@ export default function Layout() {
                     <Link to="/kontakt">kontakt</Link>
                     <Link to="">polityka prywatności</Link>
                 </div>
-                <div className="flex place-content-between w-2/5 mx-auto my-10">
+                <div className="flex-between w-2/5 mx-auto my-10">
                     <button onClick={handleClick}>contactmochidesign@gmail.com</button>
                     <div className="flex">
                         <Link to="https://www.facebook.com/profile.php?id=61561418972337" className="mx-2"><img src={fbOrange}></img></Link>

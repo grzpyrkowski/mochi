@@ -1,89 +1,55 @@
-/**
-* @license
-*
-* Font Family: Chillax
-* Designed by: Manushi Parikh
-* URL: https://www.fontshare.com/fonts/chillax
-* © 2024 Indian Type Foundry
-*
-* Chillax Extralight 
-* Chillax Light 
-* Chillax Regular 
-* Chillax Medium 
-* Chillax Semibold 
-* Chillax Bold 
-* Chillax Variable (Variable font)
-
-*
-*/
+/* chillax */
 @font-face {
-  font-family: 'Chillax-Extralight';
-  src: url('fonts/Chillax-Extralight.woff2') format('woff2'),
-       url('fonts/Chillax-Extralight.woff') format('woff'),
-       url('fonts/Chillax-Extralight.ttf') format('truetype');
+  font-family: 'chillax-extralight';
+  src: url('//cdn.fontshare.com/wf/VPEI4URMTKIBEJ3ML5QGYTUN7QZSA7PZ/X6BNVDN4VAFADO6MXX3KIYTEI47EOMBE/DT44ALCE3XZMBI43JDI76R6HUUPFXQXV.woff2') format('woff2'),
+       url('//cdn.fontshare.com/wf/VPEI4URMTKIBEJ3ML5QGYTUN7QZSA7PZ/X6BNVDN4VAFADO6MXX3KIYTEI47EOMBE/DT44ALCE3XZMBI43JDI76R6HUUPFXQXV.woff') format('woff'),
+       url('//cdn.fontshare.com/wf/VPEI4URMTKIBEJ3ML5QGYTUN7QZSA7PZ/X6BNVDN4VAFADO6MXX3KIYTEI47EOMBE/DT44ALCE3XZMBI43JDI76R6HUUPFXQXV.ttf') format('truetype');
   font-weight: 200;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Chillax-Light';
-  src: url('fonts/Chillax-Light.woff2') format('woff2'),
-       url('fonts/Chillax-Light.woff') format('woff'),
-       url('fonts/Chillax-Light.ttf') format('truetype');
+  font-family: 'chillax-light';
+  src: url('//cdn.fontshare.com/wf/SVYQ5C47KQ7Q4A6527WD7JA6PUG6HK55/I2UFEJWWBDNRZ5HKD3V4ASSUY3YYEMOJ/JEWCW7XRBNTGIANRIQOD4DIZJG4HEHFJ.woff2') format('woff2'),
+       url('//cdn.fontshare.com/wf/SVYQ5C47KQ7Q4A6527WD7JA6PUG6HK55/I2UFEJWWBDNRZ5HKD3V4ASSUY3YYEMOJ/JEWCW7XRBNTGIANRIQOD4DIZJG4HEHFJ.woff') format('woff'),
+       url('//cdn.fontshare.com/wf/SVYQ5C47KQ7Q4A6527WD7JA6PUG6HK55/I2UFEJWWBDNRZ5HKD3V4ASSUY3YYEMOJ/JEWCW7XRBNTGIANRIQOD4DIZJG4HEHFJ.ttf') format('truetype');
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Chillax-Regular';
-  src: url('fonts/Chillax-Regular.woff2') format('woff2'),
-       url('fonts/Chillax-Regular.woff') format('woff'),
-       url('fonts/Chillax-Regular.ttf') format('truetype');
+  font-family: 'chillax-regular';
+  src: url('//cdn.fontshare.com/wf/WSPWZKQM26GGKSLVGSP2CFUHUMS5BCYQ/UE3YJANJM3SE3IWT4TOMYQVMLCQ6GZGG/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.woff2') format('woff2'),
+       url('//cdn.fontshare.com/wf/WSPWZKQM26GGKSLVGSP2CFUHUMS5BCYQ/UE3YJANJM3SE3IWT4TOMYQVMLCQ6GZGG/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.woff') format('woff'),
+       url('//cdn.fontshare.com/wf/WSPWZKQM26GGKSLVGSP2CFUHUMS5BCYQ/UE3YJANJM3SE3IWT4TOMYQVMLCQ6GZGG/XESIRBQU62YFBC7YQZI6D2NT5CNZ4PPU.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Chillax-Medium';
-  src: url('fonts/Chillax-Medium.woff2') format('woff2'),
-       url('fonts/Chillax-Medium.woff') format('woff'),
-       url('fonts/Chillax-Medium.ttf') format('truetype');
+  font-family: 'chillax-medium';
+  src: url('//cdn.fontshare.com/wf/XASL35KKT35X3ACCBCOQKKABSR6AT3FX/6MU5BWUUPHCFUHM2F3E3QPQGKXCVBUOO/WZY5PMNTII6NKOB2TTIAX7QVAWMSY2DQ.woff2') format('woff2'),
+       url('//cdn.fontshare.com/wf/XASL35KKT35X3ACCBCOQKKABSR6AT3FX/6MU5BWUUPHCFUHM2F3E3QPQGKXCVBUOO/WZY5PMNTII6NKOB2TTIAX7QVAWMSY2DQ.woff') format('woff'),
+       url('//cdn.fontshare.com/wf/XASL35KKT35X3ACCBCOQKKABSR6AT3FX/6MU5BWUUPHCFUHM2F3E3QPQGKXCVBUOO/WZY5PMNTII6NKOB2TTIAX7QVAWMSY2DQ.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Chillax-Semibold';
-  src: url('fonts/Chillax-Semibold.woff2') format('woff2'),
-       url('fonts/Chillax-Semibold.woff') format('woff'),
-       url('fonts/Chillax-Semibold.ttf') format('truetype');
+  font-family: 'chillax-semibold';
+  src: url('//cdn.fontshare.com/wf/2T24MWUOKZU65SZJ33GPRGNOKE4KPOBX/T6LIXZJIPB23UDPMTIKURYWSZLXZBJ3A/THF5L6EHVL4N4NNE3GYDZNZSHABL5CH5.woff2') format('woff2'),
+       url('//cdn.fontshare.com/wf/2T24MWUOKZU65SZJ33GPRGNOKE4KPOBX/T6LIXZJIPB23UDPMTIKURYWSZLXZBJ3A/THF5L6EHVL4N4NNE3GYDZNZSHABL5CH5.woff') format('woff'),
+       url('//cdn.fontshare.com/wf/2T24MWUOKZU65SZJ33GPRGNOKE4KPOBX/T6LIXZJIPB23UDPMTIKURYWSZLXZBJ3A/THF5L6EHVL4N4NNE3GYDZNZSHABL5CH5.ttf') format('truetype');
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Chillax-Bold';
-  src: url('fonts/Chillax-Bold.woff2') format('woff2'),
-       url('fonts/Chillax-Bold.woff') format('woff'),
-       url('fonts/Chillax-Bold.ttf') format('truetype');
+  font-family: 'chillax-bold';
+  src: url('//cdn.fontshare.com/wf/UM553GIXLG5E46TUH763VYPGAQ77BPQ5/NN4EI53RUGC4BO5HP5F46SYQ4WY4U4CE/T2KA2X72VGASVXFVB7QCOIFYVH5GZJTW.woff2') format('woff2'),
+       url('//cdn.fontshare.com/wf/UM553GIXLG5E46TUH763VYPGAQ77BPQ5/NN4EI53RUGC4BO5HP5F46SYQ4WY4U4CE/T2KA2X72VGASVXFVB7QCOIFYVH5GZJTW.woff') format('woff'),
+       url('//cdn.fontshare.com/wf/UM553GIXLG5E46TUH763VYPGAQ77BPQ5/SNN4EI53RUGC4BO5HP5F46SYQ4WY4U4CE/T2KA2X72VGASVXFVB7QCOIFYVH5GZJTW.ttf') format('truetype');
   font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
-/**
-* This is a variable font
-* You can control variable axes as shown below:
-* font-variation-settings: wght 700.0;
-*
-* available axes:
-'wght' (range from 200.0 to 700.0
-*/
-@font-face {
-  font-family: 'Chillax-Variable';
-  src: url('fonts/Chillax-Variable.woff2') format('woff2'),
-       url('fonts/Chillax-Variable.woff') format('woff'),
-       url('fonts/Chillax-Variable.ttf') format('truetype');
-  font-weight: 200 700;
   font-display: swap;
   font-style: normal;
 }
