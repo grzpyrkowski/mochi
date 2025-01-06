@@ -16,7 +16,7 @@ export default function Header({urlSign, urlFB, urlIG, urlBE}: Props) {
                     <img className="w-5" alt="sign" src={urlSign}></img>
                 </Link>
             </div>
-            <div className="w-6/12 flex-beetwen">
+            <div className="w-6/12 flex-between">
                 <Link to="/o-nas">
                     <HeaderButton value="o nas"/>
                 </Link>

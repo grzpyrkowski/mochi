@@ -43,7 +43,7 @@ export default function Contact() {
             <img src={form_bg} className="block rounded-none"/>
             <form className="absolute z-10 top-1/4 w-1/2" onSubmit={handleSubmit}>
                 <h1 className="mb-10">napisz do nas!</h1>
-                <div className="flex-beetwen">
+                <div className="flex-between">
                     <label className="mr-5 text-left w-1/2">
                         <input
                             className="form-input h-10"

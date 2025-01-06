@@ -46,7 +46,7 @@ a {
   border-radius: 1em;
 }
 
-.flex-beetwen {
+.flex-between {
   @apply flex place-content-between;
 }
 
