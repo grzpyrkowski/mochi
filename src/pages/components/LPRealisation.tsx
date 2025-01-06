@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
+import sign from "../../data/pictures/layout/sign.svg"
 
 type Props = {
     url: string,
@@ -28,7 +29,8 @@ export default function LPRealisation({url, title, desc, year}: Props) {
       }
 
     return (
-    <div className="flex text-mochi-white place-content-center relative text-left">
+    <div className="flex-center text-mochi-white relative text-left">
+            <img className="absolute rounded-none w-6 top-12 right-20 z-10" src={sign}></img>
             <motion.div 
                 className="w-full h-full mx-10 mb-20 absolute blures"
                 onMouseEnter={handleMouseEnter}

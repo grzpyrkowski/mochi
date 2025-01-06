@@ -1,11 +1,14 @@
-import { useState } from "react"
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
-import form_bg from "../data/pictures/contact/form_bg.png"
+import ReCAPTCHA from "react-google-recaptcha";
+import form_bg from "../data/pictures/contact/form_bg.png";
 
 export default function Contact() {
     const [clientsName, setClientsName] = useState("");
     const [clientsEmail, setClientsEmail] = useState("");
     const [clientsMessage, setClientsMessage] = useState("");
+
+    const [isChecked, setIsChecked] = useState(null)
 
     function handleSubmit(e: any) {
         e.preventDefault();
@@ -28,20 +31,19 @@ export default function Contact() {
                 setClientsName("")
                 setClientsEmail("")
                 setClientsMessage("")
+                setIsChecked(null)
             })
             .catch((err) => {
                 console.error('Error occured:', {err})
             })
     }
 
-    console.log(clientsEmail, clientsMessage, clientsName)
-
     return (
         <section className="contact-form-section relative text-mochi-white center">
             <img src={form_bg} className="block rounded-none"/>
             <form className="absolute z-10 top-1/4 w-1/2" onSubmit={handleSubmit}>
                 <h1 className="mb-10">napisz do nas!</h1>
-                <div className="flex place-content-between">
+                <div className="flex-between">
                     <label className="mr-5 text-left w-1/2">
                         <input
                             className="form-input h-10"
@@ -76,8 +78,12 @@ export default function Contact() {
                         minLength={50}
                     />
                 </div>
+                <ReCAPTCHA 
+                    sitekey="6Ld6rasqAAAAALGaQ_T5Ro2TosAwQ3ClwuFlPbN3"
+                    onChange={(val: any) => setIsChecked(val)}
+                />
                 <div>
-                    <button type="submit" className="mochi-button">Wyślij</button>
+                    <button disabled={!isChecked} type="submit" className="mochi-button">Wyślij</button>
                 </div>
             </form>
         </section>

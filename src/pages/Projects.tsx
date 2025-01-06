@@ -21,7 +21,7 @@ export default function Projects() {
                     </p>
                 </div>
             </section>
-            <section className="project-choose-project flex mx-8 place-content-between text-mochi-white">
+            <section className="project-choose-project flex-between mx-8 text-mochi-white">
                 <ProjectPanel 
                     projectId = 'salon'
                     linkUrl = '/projekty/salon'

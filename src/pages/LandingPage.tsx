@@ -24,7 +24,7 @@ export default function LandingPage() {
                     </p>
                 </div>
             </section>
-            <section className="section-vertical-wiz bg-mochi-gray flex place-content-between">
+            <section className="section-vertical-wiz bg-mochi-gray flex-between">
                 <motion.div className="mt-28">
                     <HorizontalPhotoPanel
                         url1={wiz1}

@@ -1,39 +1,10 @@
 @import url('../css/fonts/roboto.css');
+@import url('../css/fonts/chillax.css');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'chillaxbold';
-  src: url('fonts/chillax/chillax-bold-webfont.woff2') format('woff2'),
-  url('fonts/chillax/chillax-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'chillaxextralight';
-  src: url('fonts/chillax/chillax-extralight-webfont.woff2') format('woff2'),
-  url('fonts/chillax/chillax-extralight-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'chillaxlight';
-  src: url('fonts/chillax/chillax-light-webfont.woff2') format('woff2'),
-  url('fonts/chillax/chillax-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'chillaxregular';
-  src: url('fonts/chillax/chillax-regular-webfont.woff2') format('woff2'),
-  url('fonts/chillax/chillax-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+/* whole app, universal styles */
 
 body {
   @apply bg-mochi-white
@@ -42,10 +13,10 @@ body {
   justify-center
   text-center
   mx-0
-  my-auto
-  roboto-regular;
+  my-auto;
   min-width: 320px;
   min-height: 100vh;
+  font-family: chillax-regular;
 }
 
 #app-wrapper {
@@ -53,41 +24,42 @@ body {
   width: calc(100vw);
 }
 
-header {
-  @apply
-  text-mochi-orange text-xl
-  px-10 py-5
-  flex
-  place-content-evenly;
-  transition: 0.3s ease;
+a {
+  text-decoration: none;
 }
 
-header:hover {
-  @apply bg-mochi-orange
-  text-mochi-white;
+.center {
+  display: flex;
+  place-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.nav-logo {
-  width: 10%;
+.shade {
+  background-color: #00000025;
+  border-radius: 1em;
 }
 
-.nav-icons {
-  width: 10%;
+.shadeAndBlur {
+  background-color: #00000075;
+  backdrop-filter: blur(3px);
+  border-radius: 1em;
 }
 
-.nav-icons img {
-  @apply mx-2
-  w-1/5;
+.flex-between {
+  @apply flex place-content-between;
 }
+
+.flex-center {
+  @apply flex place-content-center;
+}
+
+/* tags and components */
 
 h1 {
   text-transform: uppercase;
   font-size: 3rem;
   line-height: 1;
-}
-
-footer button {
-  text-transform: uppercase;
 }
 
 .mochi-button {
@@ -111,12 +83,40 @@ footer button {
   text-mochi-orange;
 }
 
-a {
-  text-decoration: none;
+/* layout */
+
+header {
+  @apply
+  text-mochi-orange text-xl
+  px-10 py-5
+  flex
+  place-content-evenly;
+  transition: 0.3s ease;
+}
+
+header:hover {
+  @apply bg-mochi-orange
+  text-mochi-white;
 }
 
 header a {
   display: flex;
+}
+
+.nav-logo {
+  width: 10%;
+}
+
+.nav-icons {
+  width: 10%;
+}
+
+.nav-icons a {
+  @apply mx-2;
+}
+
+footer button {
+  text-transform: uppercase;
 }
 
 /* main */
@@ -124,12 +124,7 @@ main img {
   border-radius: 1em;
 }
 
-.center {
-  display: flex;
-  place-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* landing page */
 
 .wiz-photo {
   @apply m-1;
@@ -150,6 +145,8 @@ main img {
   height: 500px;
 }
 
+/* projects */
+
 .project-outlet img {
   margin-top: 2rem;
 }
@@ -159,6 +156,8 @@ main img {
   display: flex;
   place-content: beetwen;
 }
+
+/* offer */
 
 .link-offer-package {
   @apply
@@ -187,6 +186,8 @@ main img {
   height: 45vh;
 }
 
+/* contact */
+
 .form-input {
   background-color: #00000030;
   border: 1px white solid;
@@ -194,17 +195,6 @@ main img {
   padding: 0.5rem;
   width: 100%;
   backdrop-filter: blur(3px);  
-}
-
-.shade {
-  background-color: #00000025;
-  border-radius: 1em;
-}
-
-.shadeAndBlur {
-  background-color: #00000075;
-  backdrop-filter: blur(3px);
-  border-radius: 1em;
 }
 
 .error-message {

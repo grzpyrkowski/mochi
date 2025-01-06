@@ -15,7 +15,6 @@ import logo from "../data/pictures/landing_page/logo.svg";
 
 
 export default function Layout() {
-
     const [hover, setHover] = useState(false);
 
     function handleClick() {
@@ -63,7 +62,7 @@ export default function Layout() {
             </section>
             <footer>
                 <img className="mx-auto mt-20 w-1/5" src={logo}></img>
-                <div className="flex place-content-between w-3/5 mx-auto my-10 uppercase">
+                <div className="flex-between w-3/5 mx-auto my-10 uppercase">
                     <Link to="/">strona główna</Link>
                     <Link to="/o-nas">o nas</Link>
                     <Link to="/projekty/salon">projekty</Link>
@@ -71,12 +70,12 @@ export default function Layout() {
                     <Link to="/kontakt">kontakt</Link>
                     <Link to="">polityka prywatności</Link>
                 </div>
-                <div className="flex place-content-between w-2/5 mx-auto my-10">
+                <div className="flex-between w-2/5 mx-auto my-10">
                     <button onClick={handleClick}>contactmochidesign@gmail.com</button>
                     <div className="flex">
-                        <Link to="" className="mx-2"><img src={fbOrange}></img></Link>
-                        <Link to="" className="mx-2"><img src={igOrange}></img></Link>
-                        <Link to="" className="mx-2"><img src={beOrange}></img></Link>
+                        <Link to="https://www.facebook.com/profile.php?id=61561418972337" className="mx-2"><img src={fbOrange}></img></Link>
+                        <Link to="https://www.instagram.com/mo.chidesign/" className="mx-2"><img src={igOrange}></img></Link>
+                        <Link to="https://www.behance.net/michalimietlin" className="mx-2"><img src={beOrange}></img></Link>
                     </div>
                 </div>
             </footer>

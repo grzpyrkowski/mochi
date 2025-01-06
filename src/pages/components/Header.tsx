@@ -16,7 +16,7 @@ export default function Header({urlSign, urlFB, urlIG, urlBE}: Props) {
                     <img className="w-5" alt="sign" src={urlSign}></img>
                 </Link>
             </div>
-            <div className="w-6/12 flex place-content-between">
+            <div className="w-6/12 flex-between">
                 <Link to="/o-nas">
                     <HeaderButton value="o nas"/>
                 </Link>
@@ -31,9 +31,9 @@ export default function Header({urlSign, urlFB, urlIG, urlBE}: Props) {
                 </Link>
             </div>
             <div className="nav-icons flex">
-                <img alt="fb" src={urlFB}></img>
-                <img alt="ig" src={urlIG}></img>
-                <img alt="tw" src={urlBE}></img>
+                <Link to="https://www.facebook.com/profile.php?id=61561418972337"><img alt="fb" src={urlFB}></img></Link>
+                <Link to="https://www.instagram.com/mo.chidesign/"><img alt="ig" src={urlIG}></img></Link>
+                <Link to="https://www.behance.net/michalimietlin"><img alt="be" src={urlBE}></img></Link>
             </div>
         </>
     )
