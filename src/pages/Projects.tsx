@@ -15,7 +15,7 @@ export default function Projects() {
             <section className="projects-header">
                 <div className="my-36 text-left text-mochi-orange ml-40 w-2/3">
                     <h1>wybrane realizacje</h1>
-                    <p className="my-10">
+                    <p className="my-10 mx-0">
                         Poznaj wybrane projekty, które świadczą o naszym zaangażowaniu, kreatywności i profesjonalizmie. 
                         Aby zobaczyć pełne portfolio, odwiedź nasz profil na <a href=''><u>Behance</u></a>, gdzie znajdziesz więcej inspirujących realizacji.
                     </p>

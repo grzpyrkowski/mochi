@@ -4,9 +4,7 @@ import MochiButton from "./components/MochiButton";
 import logo from "../data/pictures/landing_page/logo.svg";
 import wiz1 from "../data/pictures/landing_page/wiz_1.png";
 import wspolne1 from "../data/pictures/landing_page/wspolne_1.png";
-import real1 from "../data/pictures/landing_page/realisation_1.png";
-import real2 from "../data/pictures/landing_page/realisation_2.png";
-import real3 from "../data/pictures/landing_page/realisation_3.png";
+import real from "../data/pictures/landing_page/realisation.png";
 import sign from "../data/pictures/layout/sign.svg";
 import bulb from "../data/pictures/landing_page/lightbulb.svg";
 import LPRealisation from "./components/LPRealisation";
@@ -19,7 +17,7 @@ export default function LandingPage() {
                     <img alt="logo-mochi" src={logo}></img>
                 </div>
                 <div className="center my-16">
-                    <p className="roboto-thin w-1/2">Tworzymy wnętrza z pasją do ludzi, architektury i designu - tworzymy przestrzenie z pasją i dbałością o każdy detal. 
+                    <p className="roboto-light w-1/2">Tworzymy wnętrza z pasją do ludzi, architektury i designu - tworzymy przestrzenie z pasją i dbałością o każdy detal. 
                         Wierzymy, że wnętrza odzwierciedlają osobowość i styl życia, dlatego każdy projekt jest unikalny i dopasowany do Twoich potrzeb. Zapraszamy do współpracy!
                     </p>
                 </div>
@@ -55,7 +53,7 @@ export default function LandingPage() {
                     <img className="block" alt="" src={wspolne1}></img>
                     <div className="absolute z-10 text-left w-2/3 bottom-20 left-40 text-mochi-white">
                         <div className="flex"><h1 className="mb-5">POZNAJ MO.CHI DESIGN</h1><img className="rounded-none w-5 ml-8 mb-5" src={sign}></img></div>
-                        <p>
+                        <p className="mx-0">
                             Jesteśmy absolwentkami kierunku Architektura na Politechnice Wrocławskiej oraz Krakowskiej. 
                             Doświadczenie w projektowaniu zdobywałyśmy zarówno w trakcie studiów, jak i podczas pracy zawodowej. 
                             Na swoim koncie, oprócz projektów wnętrz domów oraz mieszkań, posiadamy projekty komercyjne oraz wnętrza pod inwestycje. 
@@ -71,25 +69,28 @@ export default function LandingPage() {
             <section className="section-realisations rounded-b-lg">
                 <div className="my-36 text-left text-mochi-orange ml-40 w-2/3">
                     <h1>wybrane realizacje</h1>
-                    <p className="my-10">
+                    <p className="my-10 mx-0">
                         Poznaj wybrane projekty, które świadczą o naszym zaangażowaniu, kreatywności i profesjonalizmie. 
-                        Aby zobaczyć pełne portfolio, odwiedź nasz profil na <a href=''><u>Behance</u></a>, gdzie znajdziesz więcej inspirujących realizacji.
+                        Aby zobaczyć pełne portfolio, odwiedź nasz profil na <a href='https://www.behance.net/michalimietlin' target="_blank"><u>Behance</u></a>, gdzie znajdziesz więcej inspirujących realizacji.
                     </p>
                 </div>
                 <LPRealisation 
-                    url={real1}
+                    picUrl={real}
+                    projUrl="salon"
                     title="Salon w kamienicy"
                     desc="Salon powstał siema nara"
                     year={2024}
                 />
                 <LPRealisation 
-                    url={real2}
+                    picUrl={real}
+                    projUrl="kuchnia"
                     title="Salon w kamienicy"
                     desc="Salon powstał siema nara"
                     year={2024}
                 />
                 <LPRealisation 
-                    url={real3}
+                    picUrl={real}
+                    projUrl="kuchnia"
                     title="Salon w kamienicy"
                     desc="Salon powstał siema nara"
                     year={2024}

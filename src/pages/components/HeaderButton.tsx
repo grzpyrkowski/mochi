@@ -1,6 +1,6 @@
 export default function HeaderButton({ value }: { value: string }) {
     return (
-        <button className="roboto-light uppercase">
+        <button className="uppercase">
             {value}
         </button>
     );
