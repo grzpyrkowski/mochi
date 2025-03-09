@@ -29,8 +29,6 @@ export default function App() {
     );
 
   return (
-      <div id="app-wrapper" className="relative">
-          <RouterProvider router={router} />
-      </div>
+    <RouterProvider router={router} />
   )
 }

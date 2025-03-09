@@ -6,7 +6,6 @@ export default function Offer() {
     return (
         <>
             <Outlet />
-
             <section className="offer-disclousers-section w-4/5 center text-left flex-col">
                 <div>
                     <MochiButton 

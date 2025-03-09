@@ -14,7 +14,7 @@ export default function Bathroom() {
                     <img src={small3}></img>
                 </div>
                 <div className='description w-2/5 mt-28'>
-                    <h1>Łazienka</h1>
+                    <h3>Łazienka</h3>
                     <p>tutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad 
                         oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad 
                         oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad 

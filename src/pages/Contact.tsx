@@ -40,7 +40,9 @@ export default function Contact() {
 
     return (
         <section className="contact-form-section relative text-mochi-white center">
-            <img src={form_bg} className="block rounded-none"/>
+            <img src={form_bg}
+            alt="Visualization of a modern interior design project created by mochi, background for the contact form." 
+            className="block rounded-none"/>
             <form className="absolute z-10 top-1/4 w-1/2" onSubmit={handleSubmit}>
                 <h1 className="mb-10">napisz do nas!</h1>
                 <div className="flex-between">

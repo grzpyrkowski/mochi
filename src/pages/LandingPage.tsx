@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import HorizontalPhotoPanel from "./components/VerticalWizPanel";
+import VerticalWizPanel from "./components/VerticalWizPanel"
 import MochiButton from "./components/MochiButton";
 import logo from "../data/pictures/landing_page/logo.svg";
 import wiz1 from "../data/pictures/landing_page/wiz_1.png";
@@ -24,25 +24,25 @@ export default function LandingPage() {
             </section>
             <section className="section-vertical-wiz bg-mochi-gray flex-between">
                 <motion.div className="mt-28">
-                    <HorizontalPhotoPanel
+                    <VerticalWizPanel
                         url1={wiz1}
                         url2={wiz1}
                     />
                 </motion.div>
                 <motion.div>
-                    <HorizontalPhotoPanel
+                    <VerticalWizPanel
                         url1={wiz1}
                         url2={wiz1}
                     />
                 </motion.div>
                 <div className="mt-48">
-                    <HorizontalPhotoPanel
+                    <VerticalWizPanel
                         url1={wiz1}
                         url2={wiz1}
                     />
                 </div>
                 <motion.div className="mt-28">
-                    <HorizontalPhotoPanel
+                    <VerticalWizPanel
                         url1={wiz1}
                         url2={wiz1}
                     />
@@ -50,7 +50,7 @@ export default function LandingPage() {
             </section>
             <section className="section-meetus">
                 <div className="relative">
-                    <img className="block" alt="" src={wspolne1}></img>
+                    <img className="block" alt="mochi design owners and designers working together on upcoming project" src={wspolne1}></img>
                     <div className="absolute z-10 text-left w-2/3 bottom-20 left-40 text-mochi-white">
                         <div className="flex"><h1 className="mb-5">POZNAJ MO.CHI DESIGN</h1><img className="rounded-none w-5 ml-8 mb-5" src={sign}></img></div>
                         <p className="mx-0">
@@ -99,7 +99,7 @@ export default function LandingPage() {
             <section className="section-idea center text-mochi-orange bg-mochi-brown">
                 <div className="my-36 w-2/3">
                     <img className="mb-10 mx-auto" src={bulb}></img>
-                    <h1 className="mb-10">masz pomysł na swoje wnętrze?</h1>
+                    <h2 className="mb-10">masz pomysł na swoje wnętrze?</h2>
                     <p>
                         Martwi Cię natłok i różnorodność możliwości oraz rozwiązań? Zaufaj nam - pomożemy Ci przejść przez ten proces. 
                         Opisz nam swoje potrzeby a my zrobimy wszystko co w naszej mocy aby zrealizować Twoje pomysły.

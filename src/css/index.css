@@ -19,9 +19,17 @@ body {
   font-family: roboto;
 }
 
+#root {
+  width: 100%;
+  height: 100%;
+}
+
 #app-wrapper {
+  @apply mx-auto;
   max-width: 1440px;
   width: calc(100vw);
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -60,9 +68,15 @@ h1, h2, h3, h4, h5, h6 {
   font-family: chillax-regular;
 }
 
-h1 {
+h1, h2 {
   text-transform: uppercase;
   font-size: 3rem;
+  line-height: 1;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 2.25rem;
   line-height: 1;
 }
 
@@ -201,10 +215,7 @@ main img {
   backdrop-filter: blur(3px);  
 }
 
-.error-message {
-  display: none;
-}
-
-.error-message:invalid {
-  display: block;
+.contact-alert {
+  width: 100%;
+  height: 155%;
 }

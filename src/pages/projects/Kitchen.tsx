@@ -14,7 +14,7 @@ export default function Kitchen() {
                     <img src={small3}></img>
                 </div>
                 <div className='description w-2/5 mt-28'>
-                    <h1>Kuchnia</h1>
+                    <h3>Kuchnia</h3>
                     <p>tutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad 
                         oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad 
                         oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad oisbscihfcnhfihnsiltutaj kó®tki opis projektu blabaoc asapdnqdoiasbdnsadiosad 
