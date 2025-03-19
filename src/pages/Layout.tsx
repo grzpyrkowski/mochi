@@ -71,7 +71,7 @@ export default function Layout() {
                         <Link to="/projekty/salon">projekty</Link>
                         <Link to="/oferta">oferta</Link>
                         <Link to="/kontakt">kontakt</Link>
-                        <Link to="">polityka prywatności</Link>
+                        <Link to="/polityka-prywatnosci">polityka prywatności</Link>
                     </div>
                     <div className="flex-between w-2/5 mx-auto my-10">
                         <button onClick={handleClick}>contactmochidesign@gmail.com</button>

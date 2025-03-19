@@ -13,9 +13,9 @@ export default function Contact() {
     function handleSubmit(e: any) {
         e.preventDefault();
 
-        const serviceId = "service_wwnvql9";
-        const templateId = "template_z13qowh";
-        const publicKey = "H7dilxvFuBw-iKEB2";
+        const serviceId = "service_q2xrub8";
+        const templateId = "template_k1uhzsr";
+        const publicKey = "1leC_MEIw82M7QWaH";
 
         const emailData = {
             from_name: clientsName,
