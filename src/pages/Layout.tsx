@@ -12,7 +12,6 @@ import beOrange from "../data/pictures/layout/behance.svg";
 import beWhite from "../data/pictures/layout/behance_white.svg";
 import back_to_top from "../data/pictures/layout/back_to_start_arrow.svg";
 import logo from "../data/pictures/landing_page/logo.svg";
-import ContactAlert from "./components/ContactAlert.tsx";
 
 
 export default function Layout() {
