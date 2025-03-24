@@ -8,6 +8,7 @@ import StandardOffer from "./pages/offers/StandardOffer.tsx";
 import BasicOffer from "./pages/offers/BasicOffer.tsx";
 import AdvancedOffer from "./pages/offers/AdvancedOffer.tsx";
 import Contact from "./pages/Contact.tsx";
+import Policy from "./pages/Policy.tsx";
 import ErrorBoundary from "./pages/ErrorBoundary.tsx";
 
 export default function App() {
@@ -24,13 +25,12 @@ export default function App() {
                     <Route path={"/oferta/pakiet-zaawansowany"} element={<AdvancedOffer />} />
                 </Route>
                 <Route path={"/kontakt"} element={<Contact />} />
+                <Route path={"/polityka-prywatnosci"} element={<Policy />} />
             </Route>
         )
     );
 
   return (
-      <div id="app-wrapper" className="relative">
-          <RouterProvider router={router} />
-      </div>
+    <RouterProvider router={router} />
   )
 }

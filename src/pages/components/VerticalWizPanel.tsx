@@ -6,8 +6,8 @@ type Props = {
 export default function VerticalWizPanel({ url1, url2 } : Props) {
     return (
         <>
-            <img className="wiz-photo" alt='' src={url1}></img>
-            <img className="wiz-photo" alt='' src={url2}></img>
+            <img className="wiz-photo" alt={'part of ' + {url1} + ' visualisation'} src={url1}></img>
+            <img className="wiz-photo" alt={'part of ' + {url2} + ' visualisation'} src={url2}></img>
         </>
     )
 }

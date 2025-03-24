@@ -1,15 +1,17 @@
 import { motion } from "framer-motion"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import sign from "../../data/pictures/layout/sign.svg"
 
 type Props = {
-    url: string,
+    picUrl: string,
+    projUrl: string,
     title: string,
     desc: string,
     year: number
 }
 
-export default function LPRealisation({url, title, desc, year}: Props) {
+export default function LPRealisation({picUrl, projUrl, title, desc, year}: Props) {
     const [isHovered, setIsHovered] = useState(false);
     function handleMouseEnter() {
         setIsHovered(true);
@@ -29,10 +31,10 @@ export default function LPRealisation({url, title, desc, year}: Props) {
       }
 
     return (
-    <div className="flex-center text-mochi-white relative text-left">
-            <img className="absolute rounded-none w-6 top-12 right-20 z-10" src={sign}></img>
+    <Link to={"/projekty/" + projUrl} className="flex-center text-mochi-white relative text-left">
+            <img className="absolute rounded-none w-6 top-12 right-20 z-10" alt={{projUrl} + ' project thumbnail, also button leading to particular project site'} src={sign}></img>
             <motion.div 
-                className="w-full h-full mx-10 mb-20 absolute blures"
+                className="w-full h-full mb-20 absolute blures"
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
                 animate={isHovered ? "hover" : "initial"}
@@ -49,7 +51,7 @@ export default function LPRealisation({url, title, desc, year}: Props) {
                     <p className="year ">{year}</p>
                 </div>
             </motion.div>
-        <img className="mb-6 block" src={url} />
-    </div>
+        <img className="mb-6 block" src={picUrl} />
+    </Link>
     )
 }

@@ -6,16 +6,18 @@ import Bathroom from "./projects/Bathroom";
 import living_room from "../data/pictures/projects/cropped_realisation_1.png"
 import bathroom from "../data/pictures/projects/cropped_realisation_2.png"
 import kitchen from "../data/pictures/projects/cropped_realisation_3.png"
+import ScrollToTop from "./components/ScrollToTop";
 
 export default function Projects() {
     let param = useParams();
 
     return (
         <>
+            <ScrollToTop />
             <section className="projects-header">
                 <div className="my-36 text-left text-mochi-orange ml-40 w-2/3">
                     <h1>wybrane realizacje</h1>
-                    <p className="my-10">
+                    <p className="my-10 mx-0">
                         Poznaj wybrane projekty, które świadczą o naszym zaangażowaniu, kreatywności i profesjonalizmie. 
                         Aby zobaczyć pełne portfolio, odwiedź nasz profil na <a href=''><u>Behance</u></a>, gdzie znajdziesz więcej inspirujących realizacji.
                     </p>

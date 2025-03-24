@@ -31,9 +31,9 @@ export default function Header({urlSign, urlFB, urlIG, urlBE}: Props) {
                 </Link>
             </div>
             <div className="nav-icons flex">
-                <Link to="https://www.facebook.com/profile.php?id=61561418972337"><img alt="fb" src={urlFB}></img></Link>
-                <Link to="https://www.instagram.com/mo.chidesign/"><img alt="ig" src={urlIG}></img></Link>
-                <Link to="https://www.behance.net/michalimietlin"><img alt="be" src={urlBE}></img></Link>
+                <Link to="https://www.facebook.com/profile.php?id=61561418972337" target="_blank"><img alt="fb" src={urlFB}></img></Link>
+                <Link to="https://www.instagram.com/mo.chidesign/" target="_blank"><img alt="ig" src={urlIG}></img></Link>
+                <Link to="https://www.behance.net/michalimietlin" target="_blank"><img alt="be" src={urlBE}></img></Link>
             </div>
         </>
     )

@@ -26,7 +26,7 @@ export default function StandardOffer() {
         <section className="offer-desc-section w-4/5 mx-auto text-left mt-24 text-mochi-black">
             <div>
                 <div className="flex-between text-2xl text-mochi-orange">
-                    <h2>PAKIET STANDARDOWY (PROJEKT KONCEPCYJNY)</h2>
+                    <h1>PAKIET STANDARDOWY (PROJEKT KONCEPCYJNY)</h1>
                     <hr className="w-1/5"></hr>
                     <h2>129 zł/m2</h2>
                 </div>

@@ -30,13 +30,13 @@ export default function OfferPackage({chose, title, price, src} : Props) {
                 >
                     <h2 className="text-2xl">{title}</h2>
                     <hr />
-                    <p className="text-2xl">{price} zł / m2</p>
+                    <h3 className="text-2xl">{price} zł / m2</h3>
                 </motion.div>
                 :
                 <div className="offer-package">
                     <h2 className="text-2xl">{title}</h2>
                     <hr />
-                    <p className="text-2xl">{price} zł / m2</p>
+                    <h3 className="text-2xl">{price} zł / m2</h3>
                 </div>
             }
         </Link>

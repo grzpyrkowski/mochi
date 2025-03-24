@@ -6,10 +6,11 @@ type Props = {
     name: string,
     title: string,
     srcNoColor: string,
-    srcColor: string
+    srcColor: string,
+    alt: string
 }
 
-export default function PortraitPanel({name, title, srcNoColor, srcColor} : Props) {
+export default function PortraitPanel({name, title, srcNoColor, srcColor, alt} : Props) {
     const [isHovered, setIsHovered] = useState(false);
     function handleMouseEnter() {
         setIsHovered(true);
@@ -40,7 +41,7 @@ export default function PortraitPanel({name, title, srcNoColor, srcColor} : Prop
                     <br/>
                     <span>{title}</span>
                 </p>
-                <p><img src={linkedin}/></p>
+                <p><img src={linkedin} alt={alt}/></p>
             </div>
             <motion.img
                 src={srcNoColor}
@@ -48,7 +49,7 @@ export default function PortraitPanel({name, title, srcNoColor, srcColor} : Prop
                 animate={isHovered ? "hover" : "initial"}
                 variants={variants}
             />
-            <img src={srcColor} className='block'/>
+            <img src={srcColor} alt={alt} className='block'/>
         </div>
     )
 }

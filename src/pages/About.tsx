@@ -11,7 +11,7 @@ export default function About() {
     return (
         <>
             <section className='section-about-banner relative flex'>
-                <img className='block' src={wspolne2}></img>
+                <img className='block' src={wspolne2} alt='The team of designers and owners of mochi – professionals in interior design'></img>
                 <h1 className='absolute z-10 text-left left-20 top-1/2'>poznajmy się!</h1>
             </section>
             <section className='section-about-desc mt-24 text-left w-4/5 center flex-col'>
@@ -32,12 +32,14 @@ export default function About() {
                     title = "mgr inż. architekt"
                     srcNoColor= {misiaNC}
                     srcColor= {misiaColor}
+                    alt = "Interior designer Michalina Mietlińska – specialist in creating functional and aesthetic spaces."
                 />
                 <PortraitPanel
                     name = "Magdalena Teresiak"
                     title = "mgr inż. architekt"
                     srcNoColor= {madziaNC}
                     srcColor= {madziaColor}
+                    alt = "Interior designer Magdalena Teresiak – expert in designing modern interiors, combining elegance with practicality."
                 />
             </section>
             <section className="section-idea center mt-24 text-mochi-orange bg-mochi-brown">
