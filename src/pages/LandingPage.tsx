@@ -2,7 +2,14 @@ import { motion } from "framer-motion";
 import VerticalWizPanel from "./components/VerticalWizPanel"
 import MochiButton from "./components/MochiButton";
 import logo from "../data/pictures/landing_page/logo.svg";
-import wiz1 from "../data/pictures/landing_page/wiz_1.png";
+import wiz1 from "../data/pictures/landing_page/1.jpg";
+import wiz2 from "../data/pictures/landing_page/2.jpg";
+import wiz3 from "../data/pictures/landing_page/3.jpg";
+import wiz4 from "../data/pictures/landing_page/4.jpg";
+import wiz5 from "../data/pictures/landing_page/5.jpg";
+import wiz6 from "../data/pictures/landing_page/6.jpg";
+import wiz7 from "../data/pictures/landing_page/7.jpg";
+import wiz8 from "../data/pictures/landing_page/8.jpg";
 import wspolne1 from "../data/pictures/landing_page/wspolne_1.png";
 import real from "../data/pictures/landing_page/realisation.png";
 import sign from "../data/pictures/layout/sign.svg";
@@ -26,25 +33,25 @@ export default function LandingPage() {
                 <motion.div className="mt-28">
                     <VerticalWizPanel
                         url1={wiz1}
-                        url2={wiz1}
+                        url2={wiz2}
                     />
                 </motion.div>
                 <motion.div>
                     <VerticalWizPanel
-                        url1={wiz1}
-                        url2={wiz1}
+                        url1={wiz3}
+                        url2={wiz4}
                     />
                 </motion.div>
                 <div className="mt-48">
                     <VerticalWizPanel
-                        url1={wiz1}
-                        url2={wiz1}
+                        url1={wiz5}
+                        url2={wiz6}
                     />
                 </div>
                 <motion.div className="mt-28">
                     <VerticalWizPanel
-                        url1={wiz1}
-                        url2={wiz1}
+                        url1={wiz7}
+                        url2={wiz8}
                     />
                 </motion.div>
             </section>

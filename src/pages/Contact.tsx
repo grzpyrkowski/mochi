@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import ReCAPTCHA from "react-google-recaptcha";
 import form_bg from "../data/pictures/contact/form_bg.png";
@@ -8,7 +9,7 @@ export default function Contact() {
     const [clientsEmail, setClientsEmail] = useState("");
     const [clientsMessage, setClientsMessage] = useState("");
 
-    const [isChecked, setIsChecked] = useState(null)
+    const [isChecked, setIsChecked] = useState(false)
 
     function handleSubmit(e: any) {
         e.preventDefault();
@@ -31,7 +32,7 @@ export default function Contact() {
                 setClientsName("")
                 setClientsEmail("")
                 setClientsMessage("")
-                setIsChecked(null)
+                setIsChecked(false)
             })
             .catch((err) => {
                 console.error('Error occured:', {err})
@@ -80,7 +81,18 @@ export default function Contact() {
                         minLength={50}
                     />
                 </div>
+                <div className="text-left">
+                    <input 
+                        type="checkbox" 
+                        className="" 
+                        required 
+                        onChange={(val: any) => setIsChecked(val)}
+                        checked = {isChecked}
+                    /> 
+                    <span>Oświadczam, że zapoznałam/em się z <Link to="/polityka-prywatnosci">Polityką Prywatności</Link>.</span>
+                </div>
                 <ReCAPTCHA 
+                    className="mt-2"
                     sitekey="6Ld6rasqAAAAALGaQ_T5Ro2TosAwQ3ClwuFlPbN3"
                     onChange={(val: any) => setIsChecked(val)}
                 />
