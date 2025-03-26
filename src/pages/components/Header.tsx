@@ -11,11 +11,9 @@ type Props = {
 export default function Header({urlSign, urlFB, urlIG, urlBE}: Props) {
     return (
         <>
-            <div className="nav-logo">
-                <Link to="/">
-                    <img className="w-5" alt="sign" src={urlSign}></img>
-                </Link>
-            </div>
+            <Link to="/" className="nav-logo flex-center mr-10">
+                <img className="w-5" alt="sign" src={urlSign}></img>
+            </Link>
             <div className="w-6/12 flex-between">
                 <Link to="/o-nas">
                     <HeaderButton value="o nas"/>

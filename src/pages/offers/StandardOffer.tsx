@@ -7,29 +7,22 @@ export default function StandardOffer() {
             <OfferPackage 
                 chose = {false}
                 title = {"pakiet podstawowy"}
-                price = {99}
                 src = {"/oferta/pakiet-podstawowy"}
             />
             <OfferPackage 
                 chose = {true}
                 title = {"pakiet standardowy"}
-                price = {129}
                 src = {"/oferta"}
             />
             <OfferPackage 
                 chose = {false}
                 title = {"pakiet zaawansowany"}
-                price = {179}
                 src = {"/oferta/pakiet-zaawansowany"}
             />
         </section>
         <section className="offer-desc-section w-4/5 mx-auto text-left mt-24 text-mochi-black">
             <div>
-                <div className="flex-between text-2xl text-mochi-orange">
-                    <h1>PAKIET STANDARDOWY (PROJEKT KONCEPCYJNY)</h1>
-                    <hr className="w-1/5"></hr>
-                    <h2>129 zł/m2</h2>
-                </div>
+                <h4 className="text-mochi-orange">PAKIET STANDARDOWY (PROJEKT KONCEPCYJNY)</h4>
                 <p className="mt-10 mb-3 mx-0 text-mochi-orange">ZAKRES</p>
                 <ul className="list-disc ml-4">
                     <li>Inwentaryzacja - pomiar stanu istniejącego<span className="text-mochi-orange">*</span></li>

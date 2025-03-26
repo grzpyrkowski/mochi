@@ -13,6 +13,10 @@ import ErrorBoundary from "./pages/ErrorBoundary.tsx";
 
 export default function App() {
 
+    addEventListener("contextmenu", function(event) {
+        event.preventDefault();
+    });
+
     const router = createBrowserRouter(
         createRoutesFromElements(
             <Route element={<Layout />} errorElement={<ErrorBoundary />}>
