@@ -84,7 +84,7 @@ export default function Contact() {
                 <div className="text-left">
                     <input 
                         type="checkbox" 
-                        className="" 
+                        className="mr-2" 
                         required 
                         onChange={(val: any) => setIsChecked(val)}
                         checked = {isChecked}
