@@ -20,14 +20,14 @@ export default function AdvancedOffer() {
                 src = {"/oferta/pakiet-zaawansowany"}
             />
         </section>
-        <section className="offer-desc-section w-4/5 mx-auto text-left mt-24 text-mochi-black">
+        <section className="offer-desc-section w-4/5 mx-auto text-left mt-24">
             <div>
-                <h4 className="text-mochi-orange">PAKIET ZAAWANSOWANY (PROJEKT KONCEPCYJNY)</h4>
-                <p className="mt-10 mb-3 mx-0 text-mochi-orange">ZAKRES</p>
+                <h4 >PAKIET ZAAWANSOWANY (PROJEKT KONCEPCYJNY)</h4>
+                <p className="mt-10 mb-3 mx-0">ZAKRES</p>
                 <ul className="list-disc ml-4">
-                    <li>Inwentaryzacja - pomiar stanu istniejącego<span className="text-mochi-orange">*</span></li>
+                    <li>Inwentaryzacja - pomiar stanu istniejącego*</li>
                     <li>Koncepcja układu funkcjonalnego (minimum 2 propozycje do każdego pomieszczenia) z 1 poprawką do przedstawionych propozycji</li>
-                    <li>Moodboard<span className="text-mochi-orange">**</span> (jeden wariant dla każdego pomieszczenia) z 1 poprawką do przedstawionej propozycji</li>
+                    <li>Moodboard** (jeden wariant dla każdego pomieszczenia) z 1 poprawką do przedstawionej propozycji</li>
                     <li>Wizualizacje 3D z 1 poprawką do przedstawionej propozycji</li>
                     <li>Lista zakupów</li>
                 </ul>

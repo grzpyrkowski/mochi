@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import VerticalWizPanel from "./components/VerticalWizPanel"
 import MochiButton from "./components/MochiButton";
 import logo from "../data/pictures/landing_page/logo.svg";
@@ -30,35 +29,35 @@ export default function LandingPage() {
                 </div>
             </section>
             <section className="section-vertical-wiz bg-mochi-gray flex-between">
-                <motion.div className="mt-28">
+                <div className="mt-28">
                     <VerticalWizPanel
                         url1={wiz1}
                         url2={wiz2}
                     />
-                </motion.div>
-                <motion.div>
+                </div>
+                <div>
                     <VerticalWizPanel
                         url1={wiz3}
                         url2={wiz4}
                     />
-                </motion.div>
+                </div>
                 <div className="mt-48">
                     <VerticalWizPanel
                         url1={wiz5}
                         url2={wiz6}
                     />
                 </div>
-                <motion.div className="mt-28">
+                <div className="mt-28">
                     <VerticalWizPanel
                         url1={wiz7}
                         url2={wiz8}
                     />
-                </motion.div>
+                </div>
             </section>
             <section className="section-meetus">
                 <div className="relative">
                     <img className="block" alt="mochi design owners and designers working together on upcoming project" src={wspolne1}></img>
-                    <div className="absolute z-10 text-left w-2/3 bottom-20 left-40 text-mochi-white">
+                    <div className="absolute z-10 text-left w-2/3 bottom-20 ml-40 text-mochi-white">
                         <div className="flex"><h1 className="mb-5">POZNAJ MO.CHI DESIGN</h1><img className="rounded-none w-5 ml-8 mb-5" src={sign}></img></div>
                         <p className="mx-0">
                             Jesteśmy absolwentkami kierunku Architektura na Politechnice Wrocławskiej oraz Krakowskiej. 

@@ -75,9 +75,9 @@ export default function Layout() {
                     <div className="flex-between w-2/5 mx-auto my-10">
                         <button onClick={handleClick}>contactmochidesign@gmail.com</button>
                         <div className="flex">
-                            <Link to="https://www.facebook.com/profile.php?id=61561418972337" className="mx-2"><img src={fbOrange}></img></Link>
-                            <Link to="https://www.instagram.com/mo.chidesign/" className="mx-2"><img src={igOrange}></img></Link>
-                            <Link to="https://www.behance.net/michalimietlin" className="mx-2"><img src={beOrange}></img></Link>
+                            <Link to="https://www.facebook.com/profile.php?id=61561418972337" target="_blank" className="mx-2"><img src={fbOrange}></img></Link>
+                            <Link to="https://www.instagram.com/mo.chidesign/" target="_blank" className="mx-2"><img src={igOrange}></img></Link>
+                            <Link to="https://www.behance.net/michalimietlin" target="_blank" className="mx-2"><img src={beOrange}></img></Link>
                         </div>
                     </div>
                 </footer>

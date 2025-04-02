@@ -31,7 +31,7 @@ export default function PortraitPanel({name, title, srcNoColor, srcColor, alt} :
 
     return (
         <div 
-            className='relative'
+            className='relative mx-2'
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >

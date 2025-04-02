@@ -15,7 +15,7 @@ export default function ProjectPanel({projectId, linkUrl, pictureUrl, title, yea
     let param = useParams();
 
     return (
-        <Link to={linkUrl} className="relative">
+        <Link to={linkUrl} className="project-panel relative">
             {
                 (projectId === param.id) ? 
                     <>
