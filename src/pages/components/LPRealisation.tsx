@@ -44,9 +44,9 @@ export default function LPRealisation({picUrl, projUrl, title, desc, year}: Prop
                 }}
                 variants={variants}
             >
-                <div className="absolute w-full bottom-1/4 top-1/2 ml-20">
+                <div className="absolute w-3/4 bottom-1/4 top-1/2 ml-20">
                     <h2 className="text-2xl ml-5 mb-2">{title}</h2>
-                    <hr className="w-4/5 mr-20 mb-2"/>
+                    <hr className="w-full mr-20 mb-2"/>
                     <p className="mb-5">{desc}</p>
                     <p className="year ">{year}</p>
                 </div>

@@ -23,7 +23,7 @@ export default function Projects() {
                     </p>
                 </div>
             </section>
-            <section className="project-choose-project flex-between mx-8 text-mochi-white">
+            <section className="project-choose-project flex-between text-mochi-white">
                 <ProjectPanel 
                     projectId = 'salon'
                     linkUrl = '/projekty/salon'
