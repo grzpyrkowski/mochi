@@ -1,8 +1,8 @@
 import { useParams } from "react-router";
 import ProjectPanel from "./projects/ProjectPanel";
 import LivingRoom from "./projects/LivingRoom";
-import Kitchen from "./projects/Kitchen";
-import Bathroom from "./projects/Bathroom";
+import Flat from "./projects/Flat";
+import House from "./projects/House";
 import living_room from "../data/pictures/projects/cropped_realisation_1.png"
 import bathroom from "../data/pictures/projects/cropped_realisation_2.png"
 import kitchen from "../data/pictures/projects/cropped_realisation_3.png"
@@ -25,44 +25,44 @@ export default function Projects() {
             </section>
             <section className="project-choose-project flex-between text-mochi-white">
                 <ProjectPanel 
-                    projectId = 'salon'
-                    linkUrl = '/projekty/salon'
+                    projectId = 'strefa-dzienna-w-Luksemburgu'
+                    linkUrl = '/projekty/strefa-dzienna-w-Luksemburgu'
                     pictureUrl = {living_room}
-                    title = 'Salon w kamienicy'
+                    title = 'Strefa dzienna w Luksemburgu'
+                    year = {2025}
+                />
+                <ProjectPanel 
+                    projectId = 'mieszkanie-w-Warszawie'
+                    linkUrl = '/projekty/mieszkanie-w-Warszawie'
+                    pictureUrl = {bathroom}
+                    title = 'Mieszkanie w Warszawie'
                     year = {2024}
                 />
                 <ProjectPanel 
-                    projectId = 'lazienka'
-                    linkUrl = '/projekty/lazienka'
-                    pictureUrl = {bathroom}
-                    title = 'Łazienka'
-                    year = {2023}
-                />
-                <ProjectPanel 
-                    projectId = 'kuchnia'
-                    linkUrl = '/projekty/kuchnia'
+                    projectId = 'dom-pod-Wroclawiem'
+                    linkUrl = '/projekty/dom-pod-Wroclawiem'
                     pictureUrl = {kitchen}
-                    title = 'Kuchnia'
-                    year = {2022}
+                    title = 'Dom pod Wrocławiem'
+                    year = {2024}
                 />
             </section>
             <section className="project-outlet">
                 {(() => {
-                        if (param.id === "salon") {
+                        if (param.id === "strefa-dzienna-w-Luksemburgu") {
                             return (
                                 <LivingRoom />
                             )
-                        } else if (param.id === "kuchnia") {
+                        } else if (param.id === "mieszkanie-w-Warszawie") {
                             return (
-                                <Kitchen />
+                                <Flat />
                             )
-                        } else if (param.id === "lazienka") {
+                        } else if (param.id === "dom-pod-Wroclawiem") {
                             return (
-                                <Bathroom />
+                                <House />
                             )
                         } else {
                             return (
-                                <h1 className="mt-20 text-4xl">Wybierz proszę projekt, który chcesz obejrzeć</h1>
+                                <h1 className="mt-20 text-4xl">Wybierz projekt, który chcesz obejrzeć</h1>
                             )
                         }
                     })()

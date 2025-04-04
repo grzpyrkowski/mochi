@@ -57,8 +57,8 @@ export default function Layout() {
                     <Outlet />
                 </main>
                 <section className="back-to-top center">
-                    <div className="mt-20 cursor-pointer" onClick={handleScroll}>
-                        <img src={back_to_top} className="center"/>
+                    <div className="center mt-20 cursor-pointer" onClick={handleScroll}>
+                        <img src={back_to_top}/>
                         <p className="uppercase mt-4">powrót do góry strony</p>
                     </div>
                 </section>
@@ -72,7 +72,11 @@ export default function Layout() {
                         <Link to="/kontakt">kontakt</Link>
                         <Link to="/polityka-prywatnosci">polityka prywatności</Link>
                     </div>
-                    <div className="flex-between w-2/5 mx-auto my-10">
+                    <div className="flex-between w-7/12 mx-auto my-10">
+                        <div>
+                            <p className="whitespace-nowrap my-0">+48 667 869 581</p>
+                            <p className="whitespace-nowrap my-0">+48 507 383 099</p>
+                        </div>
                         <button onClick={handleClick}>contactmochidesign@gmail.com</button>
                         <div className="flex">
                             <Link to="https://www.facebook.com/profile.php?id=61561418972337" target="_blank" className="mx-2"><img src={fbOrange}></img></Link>

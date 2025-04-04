@@ -17,7 +17,7 @@ export default function Policy() {
                     </ul>
                 </li>
                 <li>
-                    <h3>Dane kontaktowe spółki</h3>
+                    <h3>Dane kontaktowe</h3>
                     <ul>
                         <li>
                             <p>Adres pocztowy - Kościuszki 57, 36-200 Brzozów, Polska</p>

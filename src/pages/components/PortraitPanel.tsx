@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import linkedin from '../../data/pictures/about/linkedin.svg';
 
 type Props = {
     name: string,
@@ -41,7 +40,6 @@ export default function PortraitPanel({name, title, srcNoColor, srcColor, alt} :
                     <br/>
                     <span>{title}</span>
                 </p>
-                <p><img src={linkedin} alt={alt}/></p>
             </div>
             <motion.img
                 src={srcNoColor}
