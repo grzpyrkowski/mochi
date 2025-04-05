@@ -33,17 +33,24 @@ export default function About() {
                 <PortraitPanel 
                     name = "Michalina Mietlińska"
                     title = "mgr inż. architekt"
-                    srcNoColor= {misiaNC}
-                    srcColor= {misiaColor}
+                    description = " "
+                    srcNoColor = {misiaNC}
+                    srcColor = {misiaColor}
                     alt = "Interior designer Michalina Mietlińska – specialist in creating functional and aesthetic spaces."
                 />
                 <PortraitPanel
                     name = "Magdalena Teresiak"
                     title = "mgr inż. architekt"
-                    srcNoColor= {madziaNC}
-                    srcColor= {madziaColor}
+                    description = "W projektowaniu cenię otwartość i kreatywność, która od zawsze były obecne w moich pasjach."
+                    srcNoColor = {madziaNC}
+                    srcColor = {madziaColor}
                     alt = "Interior designer Magdalena Teresiak – expert in designing modern interiors, combining elegance with practicality."
                 />
+            </section>
+            <section>
+                <p><b>
+                    Razem tworzymy duet, który w każdym wnętrzu szuka równowagi – między estetyką a funkcjonalnością, detalem a całością, sztuką a codziennością. Nasze wspólne podejście opiera się na harmonii, bo wierzymy, że dobrze zaprojektowana przestrzeń to taka, w której można naprawdę poczuć się sobą.
+                </b></p>
             </section>
             <section className="section-idea w-full center py-8 mt-24 text-mochi-orange bg-mochi-brown">
                 <div className="w-2/3">

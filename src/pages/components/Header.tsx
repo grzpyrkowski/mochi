@@ -18,7 +18,7 @@ export default function Header({urlSign, urlFB, urlIG, urlBE}: Props) {
                 <Link to="/o-nas">
                     <HeaderButton value="o nas"/>
                 </Link>
-                <Link to="/projekty/salon">
+                <Link to="/projekty/strefa-dzienna-w-Luksemburgu">
                     <HeaderButton value="projekty"/>
                 </Link>
                 <Link to="/oferta">

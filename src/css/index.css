@@ -193,6 +193,11 @@ main > section {
   height: 500px;
 }
 
+/* about */
+/* .about-portrait p {
+  @apply m-1;
+} */
+
 /* projects */
 .project-panel {
   width: 32.5%;
