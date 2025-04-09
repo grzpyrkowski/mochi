@@ -16,7 +16,7 @@ export default function Flat() {
                 <div className='description w-2/5'>
                     <div className='top-8 mt-8 sticky'>
                         <h3>Mieszkanie w Warszawie</h3>
-                        <p>Nowoczesne mieszkanie w Warszawie to przestrzeń, w której dominują szarości połączone z brązem – od jasnych, subtelnych odcieni po głębokie tonacje. Starannie dobrane materiały, takie jak beton, stal i szkło, nadają wnętrzu surowego charakteru, natomiast elementy drewniane poczucie przytulności. Minimalistyczne formy i funkcjonalne rozwiązania podkreślają nowoczesny styl, a starannie dobrane oświetlenie buduje atmosferę. Całość to harmonijne połączenie estetyki i wygody. </p>
+                        <p>Nowoczesne mieszkanie w Warszawie to przestrzeń, w której dominują szarości połączone z brązem – od jasnych, subtelnych odcieni po głębokie tonacje. Starannie dobrane materiały, takie jak beton, stal i szkło, nadają wnętrzu surowego charakteru, natomiast elementy drewniane poczucie przytulności. Minimalistyczne formy i funkcjonalne rozwiązania podkreślają nowoczesny styl, a starannie dobrane oświetlenie buduje atmosferę. Całość to połączenie estetyki i wygody. </p>
                     </div>
                 </div>
             </div>

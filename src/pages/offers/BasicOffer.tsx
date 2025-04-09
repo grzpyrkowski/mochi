@@ -3,7 +3,7 @@ import OfferPackage from "./OfferPackage"
 export default function BasicOffer() {
     return (
         <>            
-        <section className="choose-offer-section center place-content-center mt-24">
+        <section className="choose-offer-section mt-24">
             <OfferPackage 
                 chose = {true}
                 title = {"pakiet podstawowy"}

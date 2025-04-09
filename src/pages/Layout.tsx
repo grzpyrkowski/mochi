@@ -1,4 +1,4 @@
-import {Outlet, Link} from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
 import Header from "./components/Header.tsx";
 import ScrollToTop from './components/ScrollToTop.tsx'
@@ -31,34 +31,34 @@ export default function Layout() {
     return (
         <>
             {/* <ContactAlert /> */}
-            <div id="app-wrapper">
-                <ScrollToTop />
-                <header 
-                    onMouseEnter={() => setHover(true)}
-                    onMouseLeave={() => setHover(false)}
-                >
-                    {hover ? 
-                    <Header 
+            <ScrollToTop />
+            <header
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+            >
+                {hover ?
+                    <Header
                         urlSign={signWhite}
                         urlFB={fbWhite}
                         urlIG={igWhite}
                         urlBE={beWhite}
                     />
-                    : 
-                    <Header 
+                    :
+                    <Header
                         urlSign={signOrange}
                         urlFB={fbOrange}
                         urlIG={igOrange}
                         urlBE={beOrange}
                     />
-                    }
-                </header>
+                }
+            </header>
+            <div id="app-wrapper">
                 <main>
                     <Outlet />
                 </main>
                 <section className="back-to-top center">
                     <div className="center mt-20 cursor-pointer" onClick={handleScroll}>
-                        <img src={back_to_top}/>
+                        <img src={back_to_top} />
                         <p className="uppercase mt-4">powrót do góry strony</p>
                     </div>
                 </section>

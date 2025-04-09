@@ -24,7 +24,7 @@ body {
   height: 100%;
 }
 
-#app-wrapper {
+#header, #app-wrapper {
   @apply mx-auto;
   max-width: 1440px;
   width: calc(100vw);
@@ -34,6 +34,11 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.center {
+  display: grid;
+  place-content: center;
 }
 
 .center > * {
@@ -203,8 +208,11 @@ main > section {
   width: 32.5%;
 }
 
-.project-choose-project {
-  @apply w-full;
+.choose-offer-section {
+  @apply 
+  w-full
+  place-content-center
+  flex;
 }
 
 .project-outlet img {
@@ -212,7 +220,6 @@ main > section {
 }
 
 .project-presentation {
-  max-width: 1440px;
   display: flex;
 }
 

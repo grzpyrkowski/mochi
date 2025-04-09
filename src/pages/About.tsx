@@ -27,13 +27,16 @@ export default function About() {
                         <b>Za Mo.chi Design stoją dwie architektki – Magda i Michalina. Połączyły nas studia, przyjaźń oraz pasja do wnętrz. Każda z nas wnosi do Mo.chi unikalne cechy, które razem tworzą połączenie kreatywności, precyzji i wrażliwości na potrzeby klienta. Doświadczenie w projektowaniu zdobywałyśmy zarówno w trakcie studiów, jak i podczas pracy zawodowej.</b>
                         <br/><br/>
                         Na swoim koncie, oprócz projektów wnętrz domów oraz mieszkań, posiadamy projekty komercyjne oraz wnętrza pod inwestycje. Podejmiemy się różnych wyzwań i pomożemy Ci stworzyć Twoją wymarzoną przestrzeń.
+                        <br/><br/>
+                        <b>
+                        Razem tworzymy duet, który w każdym wnętrzu szuka równowagi – między estetyką a funkcjonalnością, detalem a całością, sztuką a codziennością. Nasze wspólne podejście opiera się na zaprojektowaniu przestrzeni, w której można naprawdę poczuć się sobą.
+                        </b>
                     </p>
             </section>
-            <section className='section-about-us mt-24 flex-between mx-auto w-5/6'>
+            <section className='section-about-us mt-16 flex-between mx-auto w-5/6'>
                 <PortraitPanel 
                     name = "Michalina Mietlińska"
                     title = "mgr inż. architekt"
-                    description = " "
                     srcNoColor = {misiaNC}
                     srcColor = {misiaColor}
                     alt = "Interior designer Michalina Mietlińska – specialist in creating functional and aesthetic spaces."
@@ -41,19 +44,13 @@ export default function About() {
                 <PortraitPanel
                     name = "Magdalena Teresiak"
                     title = "mgr inż. architekt"
-                    description = "W projektowaniu cenię otwartość i kreatywność, która od zawsze były obecne w moich pasjach."
                     srcNoColor = {madziaNC}
                     srcColor = {madziaColor}
                     alt = "Interior designer Magdalena Teresiak – expert in designing modern interiors, combining elegance with practicality."
                 />
             </section>
-            <section>
-                <p><b>
-                    Razem tworzymy duet, który w każdym wnętrzu szuka równowagi – między estetyką a funkcjonalnością, detalem a całością, sztuką a codziennością. Nasze wspólne podejście opiera się na harmonii, bo wierzymy, że dobrze zaprojektowana przestrzeń to taka, w której można naprawdę poczuć się sobą.
-                </b></p>
-            </section>
             <section className="section-idea w-full center py-8 mt-24 text-mochi-orange bg-mochi-brown">
-                <div className="w-2/3">
+                <div className="">
                     <img className="mb-10 mx-auto" src={mail}></img>
                     <h1 className="mb-10">napisz do nas!</h1>
                     <p>

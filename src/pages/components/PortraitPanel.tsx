@@ -4,13 +4,12 @@ import { motion } from "framer-motion";
 type Props = {
     name: string,
     title: string,
-    description: string,
     srcNoColor: string,
     srcColor: string,
     alt: string
 }
 
-export default function PortraitPanel({name, title, description, srcNoColor, srcColor, alt} : Props) {
+export default function PortraitPanel({name, title, srcNoColor, srcColor, alt} : Props) {
     const [isHovered, setIsHovered] = useState(false);
     function handleMouseEnter() {
         setIsHovered(true);
@@ -40,9 +39,6 @@ export default function PortraitPanel({name, title, description, srcNoColor, src
                     <span className='uppercase'>{name}</span>
                     <br />
                     <span>{title}</span>
-                </p>
-                <p className="bottom-0">
-                    {description}
                 </p>
             </div>
             <motion.img
