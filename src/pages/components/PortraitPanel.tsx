@@ -30,14 +30,14 @@ export default function PortraitPanel({name, title, srcNoColor, srcColor, alt} :
 
     return (
         <div 
-            className='relative mx-2'
+            className='relative mx-2 about-portrait'
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
         >
-            <div className='absolute w-full z-10 flex-between'>
-                <p className='text-left'>
+            <div className='absolute w-full h-full z-10 text-left'>
+                <p>
                     <span className='uppercase'>{name}</span>
-                    <br/>
+                    <br />
                     <span>{title}</span>
                 </p>
             </div>

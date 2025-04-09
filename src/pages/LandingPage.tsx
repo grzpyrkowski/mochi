@@ -18,7 +18,7 @@ import LPRealisation from "./components/LPRealisation";
 export default function LandingPage() {
     return (
         <>
-            <section className="section-logo bg-mochi-gray text-mochi-orange text-2xl">
+            <section className="section-logo center bg-mochi-gray text-mochi-orange text-2xl">
                 <div className="center my-16">
                     <img alt="logo-mochi" src={logo}></img>
                 </div>
@@ -101,7 +101,7 @@ export default function LandingPage() {
                 />
             </section>
             <section className="section-idea center text-mochi-orange bg-mochi-brown">
-                <div className="my-24 py-8 w-2/3">
+                <div className="center my-24 py-8 w-2/3">
                     <img className="mb-10 mx-auto" src={bulb}></img>
                     <h2 className="mb-10">masz pomysł na swoje wnętrze?</h2>
                     <p>
