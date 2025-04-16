@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header.tsx";
 import ScrollToTop from './components/ScrollToTop.tsx'
 import signOrange from "../data/pictures/layout/sign.svg";
@@ -12,10 +12,17 @@ import beOrange from "../data/pictures/layout/behance.svg";
 import beWhite from "../data/pictures/layout/behance_white.svg";
 import back_to_top from "../data/pictures/layout/back_to_start_arrow.svg";
 import logo from "../data/pictures/landing_page/logo.svg";
-
+import MobilePlaceholder from "./components/MobilePlaceholder.tsx";
 
 export default function Layout() {
     const [hover, setHover] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        if (window.innerWidth < 1024) {
+            setIsMobile(true);
+        }
+    }, [isMobile])
 
     function handleClick() {
         window.open('mailto:contactmochidesign@gmail.com')
@@ -29,6 +36,9 @@ export default function Layout() {
     }
 
     return (
+        isMobile ?
+        <MobilePlaceholder />
+        :
         <>
             {/* <ContactAlert /> */}
             <ScrollToTop />

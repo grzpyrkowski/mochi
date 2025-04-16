@@ -18,11 +18,11 @@ import LPRealisation from "./components/LPRealisation";
 export default function LandingPage() {
     return (
         <>
-            <section className="section-logo center bg-mochi-gray text-mochi-orange text-2xl">
-                <div className="center my-16">
+            <section className="section-logo center bg-mochi-gray text-mochi-orange md:text-2xl">
+                <div className="center md:my-10 lg:my-16">
                     <img alt="logo-mochi" src={logo}></img>
                 </div>
-                <div className="center flex-col my-16">
+                <div className="center flex-col md:mb-10 md:mt-6 lg:my-16">
                     <p className="roboto-light w-1/2">
                         <b>Tworzymy wnętrza z pasją do ludzi, architektury i designu</b> - tworzymy harmonijne przestrzenie z pasją i dbałością o każdy detal. Wierzymy, że wnętrza odzwierciedlają osobowość i styl życia, dlatego każdy projekt jest unikalny i dopasowany do Twoich potrzeb.
                     </p>
@@ -58,8 +58,11 @@ export default function LandingPage() {
             <section className="section-meetus">
                 <div className="relative">
                     <img className="block" alt="mochi design owners and designers working together on upcoming project" src={wspolne1}></img>
-                    <div className="absolute z-10 text-left w-2/3 bottom-20 ml-40 text-mochi-white">
-                        <div className="flex"><h1 className="mb-5">POZNAJ MO.CHI DESIGN</h1><img className="rounded-none w-5 ml-8 mb-5" src={sign}></img></div>
+                    <div className="absolute z-10 text-left md:w-1/2 w-2/3 bottom-20 md:ml-24 ml-40 text-mochi-white">
+                        <div className="flex">
+                            <h1 className="mb-5 whitespace-nowrap">POZNAJ MO.CHI DESIGN</h1>
+                            <img className="rounded-none w-5 md:ml-4 ml-8 mb-5" src={sign} />
+                        </div>
                         <p className="mx-0">
                             Jesteśmy absolwentkami kierunku Architektura na Politechnice Wrocławskiej oraz Krakowskiej. 
                             W Mo.chi Design wierzymy, że dobrze zaprojektowane wnętrze to coś więcej niż piękne formy i materiały. To przestrzeń, która współgra z Tobą, daje spokój i równowagę na co dzień. Tworzymy projekty które łączą funkcjonalność, indywidualność i subtelną harmonię – tak, by każde wnętrze było unikalne, ale jednocześnie ponadczasowe.
