@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import ReCAPTCHA from "react-google-recaptcha";
 import form_bg from "../data/pictures/contact/form_bg.png";
 
 export default function Contact() {
@@ -44,7 +43,7 @@ export default function Contact() {
             <img src={form_bg}
             alt="Visualization of a modern interior design project created by mochi, background for the contact form." 
             className="block rounded-none"/>
-            <form className="absolute z-10 mt-24 w-1/2" onSubmit={handleSubmit}>
+            <form className="absolute z-10 mt-16 w-1/2" onSubmit={handleSubmit}>
                 <h1 className="mb-10">napisz do nas!</h1>
                 <div className="flex-between">
                     <label className="mr-5 text-left w-1/2">
@@ -89,13 +88,8 @@ export default function Contact() {
                         onChange={(val: any) => setIsChecked(val)}
                         checked = {isChecked}
                     /> 
-                    <span>Oświadczam, że zapoznałam/em się z <Link to="/polityka-prywatnosci">Polityką Prywatności</Link>.</span>
+                    <span>Oświadczam, że zapoznałam/em się z <Link to="/polityka-prywatnosci" className="underline">Polityką Prywatności</Link>.</span>
                 </div>
-                <ReCAPTCHA 
-                    className="mt-2"
-                    sitekey="6Ld6rasqAAAAALGaQ_T5Ro2TosAwQ3ClwuFlPbN3"
-                    onChange={(val: any) => setIsChecked(val)}
-                />
                 <div>
                     <button disabled={!isChecked} type="submit" className="mochi-button">Wyślij</button>
                 </div>

@@ -19,14 +19,14 @@ export default function LandingPage() {
     return (
         <>
             <section className="section-logo center bg-mochi-gray text-mochi-orange md:text-2xl">
-                <div className="center md:my-10 lg:my-16">
-                    <img alt="logo-mochi" src={logo}></img>
+                <div className="center my-5 md:my-10 lg:my-16">
+                    <img alt="logo-mochi" className="max-lg:w-5/6" src={logo}></img>
                 </div>
-                <div className="center flex-col md:mb-10 md:mt-6 lg:my-16">
+                <div className="center flex-col md:mb-10 lg:my-16">
                     <p className="roboto-light w-1/2">
                         <b>Tworzymy wnętrza z pasją do ludzi, architektury i designu</b> - tworzymy harmonijne przestrzenie z pasją i dbałością o każdy detal. Wierzymy, że wnętrza odzwierciedlają osobowość i styl życia, dlatego każdy projekt jest unikalny i dopasowany do Twoich potrzeb.
                     </p>
-                    <p className="chillax-medium w-1/2">Zainteresowany/a? Zapraszamy do współpracy!</p>
+                    <p className="chillax-medium md:w-1/2 whitespace-nowrap">Zainteresowany/a? Zapraszamy do współpracy!</p>
                 </div>
             </section>
             <section className="section-vertical-wiz bg-mochi-gray flex-between">
@@ -58,12 +58,12 @@ export default function LandingPage() {
             <section className="section-meetus">
                 <div className="relative">
                     <img className="block" alt="mochi design owners and designers working together on upcoming project" src={wspolne1}></img>
-                    <div className="absolute z-10 text-left md:w-1/2 w-2/3 bottom-20 md:ml-24 ml-40 text-mochi-white">
+                    <div className="absolute z-10 text-left w-7/12 lg:w-2/3 bottom-14 lg:bottom-20 ml-24 lg:ml-40 text-mochi-white">
                         <div className="flex">
                             <h1 className="mb-5 whitespace-nowrap">POZNAJ MO.CHI DESIGN</h1>
-                            <img className="rounded-none w-5 md:ml-4 ml-8 mb-5" src={sign} />
+                            <img className="rounded-none w-5 ml-4 lg:ml-8 mb-5" src={sign} />
                         </div>
-                        <p className="mx-0">
+                        <p className="mx-0 max-lg:my-0">
                             Jesteśmy absolwentkami kierunku Architektura na Politechnice Wrocławskiej oraz Krakowskiej. 
                             W Mo.chi Design wierzymy, że dobrze zaprojektowane wnętrze to coś więcej niż piękne formy i materiały. To przestrzeń, która współgra z Tobą, daje spokój i równowagę na co dzień. Tworzymy projekty które łączą funkcjonalność, indywidualność i subtelną harmonię – tak, by każde wnętrze było unikalne, ale jednocześnie ponadczasowe.
                         </p>
@@ -75,7 +75,7 @@ export default function LandingPage() {
                 </div>
             </section>
             <section className="section-realisations rounded-b-lg">
-                <div className="my-36 text-left text-mochi-orange ml-40 w-2/3">
+                <div className="my-36 text-left text-mochi-orange md:ml-24 lg:ml-40 w-2/3">
                     <h1>Realizacje</h1>
                     <p className="my-10 mx-0">
                         Nasze projekty to efekt uważnej analizy, dbałości o detale i kreatywnego podejścia do designu. Zobacz, jak wyglądają nasze realizacje i przekonaj się, że piękne wnętrza mogą być nie tylko inspirujące, ale i w pełni dopasowane do codziennego życia.
@@ -104,7 +104,7 @@ export default function LandingPage() {
                 />
             </section>
             <section className="section-idea center text-mochi-orange bg-mochi-brown">
-                <div className="center my-24 py-8 w-2/3">
+                <div className="center lg:my-10 py-8 w-2/3">
                     <img className="mb-10 mx-auto" src={bulb}></img>
                     <h2 className="mb-10">masz pomysł na swoje wnętrze?</h2>
                     <p>
